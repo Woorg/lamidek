@@ -1,0 +1,44 @@
+mixin footer(data)
+    footer.footer&attributes(attributes)
+        .footer__container.container.flex
+            figure.footer__logo.logo
+                img(src="assets/images/general/logo@2x.png", alt="logo")
+
+            .footer__nav-w
+
+                nav.footer__nav.nav.nav_second
+                    ul.nav__list
+                        li.nav__item
+                            a.nav__link(href="#") О нас
+                        li.nav__item
+                            a.nav__link(href="#") Продукция
+                        li.nav__item
+                            a.nav__link(href="#") Производство
+                        li.nav__item
+                            a.nav__link(href="#") Техническая информация
+                        li.nav__item
+                            a.nav__link(href="#") Сферы применения
+                        li.nav__item
+                            a.nav__link(href="#") Контакты
+
+                nav.footer__nav.nav.nav_second
+                    ul.nav__list
+                        li.nav__item
+                            a.nav__link(href="#") Стеновые панели
+                        li.nav__item
+                            a.nav__link(href="#") Фасадные панели
+                        li.nav__item
+                            a.nav__link(href="#") Потолок
+                        li.nav__item
+                            a.nav__link(href="#") Не декорированные панели
+                        li.nav__item
+                            a.nav__link(href="#") Профиль декоративный
+
+            .footer__contacts
+                a.footer__phone.phone.phone_second(href="tel+88005117731")
+                    != pugHelpers.Icon.call(locals, {iconName: 'phone-icon', className: 'phone__icon'})
+                    | 8 800 511 77 31
+
+                a.footer__button.button(href='#') Заказать звонок
+
+                a.footer__email(href='mailto:sales@lamidek.ru') sales@lamidek.ru

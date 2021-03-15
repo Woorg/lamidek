@@ -1,0 +1,91 @@
+.hero
+    position: relative
+    overflow: hidden
+    &:after
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        content: ''
+        // width: 375px
+        height: 400px
+        background-color: #ef7e20
+        +mq($medium)
+            left: auto
+            width: 50%
+            height: 100%
+
+    &__container
+        position: relative
+        padding-top: 33px
+        padding-bottom: 60px
+        display: flex
+        align-items: flex-start
+        flex-wrap: wrap
+        +mq($medium)
+            padding-top: 52px
+            padding-bottom: 52px
+            flex-wrap: nowrap
+        // flex-wrap: wrap
+
+        &:after
+            z-index: -1
+            position: absolute
+            top: -4px
+            left: -255px
+            content: attr(data-attr)
+            display: none
+            color: #FAFAFA
+            font-size: 500px
+            font-weight: 800
+            line-height: .85
+            text-align: right
+            text-transform: uppercase
+            +mq($medium)
+                display: block
+
+
+    &__content
+        padding-top: 38px
+        width: 100%
+        +mq($medium)
+            padding-top: 0
+            padding-right: 24px
+            max-width: 34.2%
+
+    &__text
+        margin-bottom: 14px
+        color: #a0a0a0
+        font-size: 24px
+        font-weight: 400
+
+    &__title
+        margin-bottom: 44px
+        color: #000000
+        font-size: 36px
+        font-weight: 700
+        line-height: 1.3
+        text-transform: uppercase
+        span
+            color: #ef7e20
+
+    &__slider
+        max-width: 838px
+        width: 100%
+        height: 389px
+        order: -1
+        box-shadow: 6px 6px 32px rgba(0, 0, 0, 0.16)
+        +mq($medium)
+            max-width: 71.6%
+            order: 1
+            height: auto
+
+
+
+    &__filter
+        margin-top: 40px
+        +mq($medium)
+            margin-top: 64px
+
+

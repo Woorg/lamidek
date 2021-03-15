@@ -1,0 +1,60 @@
+.header
+  z-index: 2
+  position: relative
+  background: #FFF
+  +tr(.3s linear)
+
+
+  &__container
+    padding-top: 14px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    flex-wrap: wrap
+    +mq($large)
+      padding-top: 15px
+      padding-bottom: 15px
+
+  &__logo
+    margin-right: auto
+    margin-left: auto
+    max-width: 120px
+    width: 100%
+    +mq($large)
+      margin-left: 0
+      max-width: 140px
+
+
+  &__w
+    position: relative
+    z-index: 1
+    padding-top: 13px
+    padding-bottom: 13px
+    display: flex
+    flex-wrap: wrap
+    width: 100%
+    +mq($large)
+      padding-top: 0
+      padding-bottom: 0
+      width: auto
+
+  &__nav
+    margin-right: auto
+    width: 50%
+
+    +mq($large)
+      margin-top: 2px
+      width: auto
+
+  // &__contacts
+
+
+  &__phone
+    +mq($large)
+      margin-left: 30px
+
+
+  // &__nav-trigger
+  //   margin-left: auto
+
+

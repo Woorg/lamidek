@@ -1,0 +1,38 @@
+
+html,
+body
+  height: 100%
+
+.page
+  position: relative
+  min-height: 100vh
+  display: flex
+  flex-direction: column
+  background: #fff
+  font-family: $c
+  color: #000
+  font-display: swap
+  font-weight: 400
+
+
+  &__inner
+    flex-grow: 1
+    flex-shrink: 0
+    flex-basis: auto
+
+
+.container
+  margin-right: auto
+  margin-left: auto
+  +padding-right(20px)
+  +padding-left(20px)
+  max-width: 100%
+  width: 100%
+  +mq($small)
+    +padding-right(30px)
+    +padding-left(30px)
+    max-width: 1230px
+
+img
+  max-width: 100%
+  height: auto

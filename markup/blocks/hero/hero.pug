@@ -1,0 +1,97 @@
+mixin hero(data)
+    .hero
+        .hero__container.container(data-attr='Лами дек')
+
+            .hero__content
+                .hero__content-thumbs
+                    .swiper-container.js-hero-thumbs
+
+                        .swiper-wrapper
+                            .swiper-slide
+                                .hero__item
+                                    .hero__text Небольшой текст
+                                    .hero__title Текст уникального <span>торгового предложения</span>
+                                    a.hero__more.button(href="#") Подробнее
+
+                            .swiper-slide
+                                .hero__item
+                                    .hero__text Небольшой текст 2
+                                    .hero__title Текст уникального <span>торгового предложения</span>
+                                    a.hero__more.button(href="#") Подробнее
+
+                            .swiper-slide
+                                .hero__item
+                                    .hero__text Небольшой текст 3
+                                    .hero__title Текст уникального <span>торгового предложения</span>
+                                    a.hero__more.button(href="#") Подробнее
+
+
+
+                .hero__filter.filter-panels
+                    h2.filter-panels__title
+                        != pugHelpers.Icon.call(locals, {iconName: 'select-panels', className: 'filter-panels__icon'})
+                        | Выбрать тип панелей:
+
+                    form(action="").filter-panels__form.form
+                        .filter-panels__row.form__row
+                            .filter-panels__field.form__field.form__field_checkbox
+                                label.form__label
+                                    input.form__checkbox(type="checkbox" name="" value="" checked)
+
+                                    span.form__label-text бюджетные
+
+                            .filter-panels__field.form__field.form__field_checkbox
+                                label.form__label
+                                    input.form__checkbox(type="checkbox" name="" value="" checked)
+                                    span.form__label-text негорючие
+
+
+                            .filter-panels__field.form__field.form__field_checkbox
+                                label.form__label
+                                    input.form__checkbox(type="checkbox" name="" value="" checked)
+                                    span.form__label-text износостойкие
+
+                            .filter-panels__field.form__field.form__field_checkbox
+                                label.form__label
+                                    input.form__checkbox(type="checkbox" name="" value="" checked)
+                                    span.form__label-text влагостойкие
+
+                            .filter-panels__field.form__field.form__field_checkbox
+                                label.form__label
+                                    input.form__checkbox(type="checkbox" name="" value="" checked)
+                                    span.form__label-text трудногорючие
+
+                            .filter-panels__field.form__field.form__field_checkbox
+                                label.form__label
+                                    input.form__checkbox(type="checkbox" name="" value="" checked)
+                                    span.form__label-text антивандальные
+
+
+                        input.filter-panels__submit.button(type="submit" value="Применить")
+
+
+
+
+            .hero__slider.slider.swiper-container.js-hero-slider
+                .swiper-wrapper
+                    .swiper-slide
+                        img.slider__image(src="assets/images/content/slider-img-1.jpg", alt="")
+
+                    .swiper-slide
+                        img.slider__image(src="assets/images/content/slider-img-1.jpg", alt="")
+
+                    .swiper-slide
+                        img.slider__image(src="assets/images/content/slider-img-1.jpg", alt="")
+
+                .slider__pagination-w
+
+                    .swiper-pagination.slider__pagination
+
+                    .slider__button.slider__button_prev
+                        != pugHelpers.Icon.call(locals, {iconName: 'slider-arrow', className: 'slider__button-icon'})
+                    .slider__button.slider__button_next
+                        != pugHelpers.Icon.call(locals, {iconName: 'slider-arrow', className: 'slider__button-icon'})
+
+
+
+

@@ -1,0 +1,55 @@
+.form
+
+    // &__field_checkbox
+
+
+    &__label
+        display: flex
+        align-items: center
+        cursor: pointer
+
+    &__label-text
+        position: relative
+        padding-left: 32px
+        color: #000000
+        font-family: $g
+        font-size: 14px
+        line-height: 1.29
+        text-align: left
+        +mq($large)
+            font-size: 16px
+            font-weight: 400
+            line-height: 1.25
+
+        &:after,
+        &:before
+            position: absolute
+            top: 0
+            left: 0
+            content: ''
+            width: 16px
+            height: 16px
+            border: 1px solid #ef7e20
+
+
+    &__checkbox
+        +resetbutton()
+        position: relative
+        visibility: hidden
+        opacity: 0
+        appearance: none
+
+        &:checked + .form__label-text
+            &:after
+                display: none
+            &:before
+                border: none
+                width: 18px
+                height: 18px
+                background: url('../images/general/checked-icon.svg') 0 0 no-repeat
+                background-size: cover
+
+
+
+    &__submit
+        width: 100%

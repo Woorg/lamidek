@@ -1,0 +1,29 @@
+doctype html
+html(class="no-js", lang="ru")
+
+    include ../blocks/head/head.pug
+    include ../blocks/header/header.pug
+    include ../blocks/panels-nav/panels-nav.pug
+    include ../blocks/hero/hero.pug
+
+    include ../blocks/catalog/catalog.pug
+
+
+    include ../blocks/footer/footer.pug
+
+    head
+        +head(head.defaults)
+    body.page
+        |%=symbols=%
+        +header()
+        +panels-nav()
+        main.page__inner
+            +hero()
+            +catalog()
+
+        .page__bottom
+            +footer()
+
+        script(src='%=static=%js/separate-js/jquery.min.js')
+        //- script(src='%=static=%js/separate-js/swiper-bundle.min.js')
+        script(src='%=static=%js/main%=hash=%%=min=%.js')

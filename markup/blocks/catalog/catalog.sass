@@ -1,0 +1,175 @@
+.catalog
+    overflow: hidden
+    box-shadow: 0 -7px 22px rgba(0, 0, 0, 0.08)
+    &__container
+        padding-top: 70px
+        padding-bottom: 46px
+    &__title
+        margin-bottom: 40px
+
+    &__grid
+        margin-left: -5px
+        margin-right: -5px
+        display: flex
+        justify-content: center
+        align-items: flex-start
+        flex-wrap: wrap
+        +mq($small)
+        +mq($medium)
+            margin-left: -12px
+            margin-right: -12px
+            justify-content: flex-start
+
+    &__item
+        margin-bottom: 10px
+        padding-left: 5px
+        padding-right: 5px
+        max-width: 250px
+        width: 100%
+        +mq($medium)
+            margin-bottom: 24px
+            padding-left: 12px
+            padding-right: 12px
+            max-width: 50%
+        +mq($large)
+            max-width: 24%
+
+
+    &__item-w
+        position: relative
+        border: 1px solid #d4d4d4
+        padding-top: 30px
+        padding-right: 30px
+        padding-bottom: 30px
+        padding-left: 30px
+        height: 371px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        background-color: #ffffff
+        text-align: center
+        text-decoration: none
+        color: inherit
+        // box-shadow: 0 -7px 22px rgba(0, 0, 0, 0.08)
+        overflow: hidden
+        +mq($small)
+            padding-top: 27px
+            padding-right: 20px
+            padding-left: 20px
+            height: 352px
+
+        &:after
+            position: absolute
+            top: 0
+            left: 0
+            right: 0
+            bottom: 0
+            content: ''
+            opacity: 1
+            background-color: rgba(255, 255, 255, 0.85)
+            // transform: translateY(100%)
+            +tr(.1s ease)
+            will-change: opacity, visibility
+            display: none
+
+
+        &:hover
+            &:after
+                +mq($small)
+                    display: block
+
+            .catalog__image
+                +mq($small)
+                    position: absolute
+                    top: 27px
+                    right: 20px
+                    left: 20px
+
+            .catalog__item-title
+                +mq($small)
+                    position: relative
+                    z-index: 1
+
+            .catalog__button
+                +mq($small)
+                    position: relative
+                    z-index: 1
+                    margin-top: 0
+                    margin-bottom: 15px
+                    display: block
+                    visibility: visible
+                    opacity: 1
+
+            .catalog__item-text
+                +mq($small)
+                    position: relative
+                    z-index: 1
+                    display: block
+                    visibility: visible
+                    opacity: 1
+
+    &__image
+        margin-right: -13px
+        margin-left: -13px
+        margin-bottom: 14px
+        order: 1
+        +mq($small)
+            // margin-bottom: 50px
+            margin-right: 0
+            margin-left: 0
+            order: 0
+
+
+    &__button
+        margin-top: auto
+        padding-top: 16px
+        height: 52px
+        order: 3
+        font-size: 24px
+        +tr(.3s ease)
+        +mq($small)
+            display: none
+            height: 55px
+            visibility: hidden
+            opacity: 0
+            order: 1
+
+
+    &__item-title
+        margin-right: -20px
+        margin-left: -20px
+        order: 0
+        height: 73px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        font-size: 18px
+        font-weight: 700
+        line-height: 1.3
+        text-transform: uppercase
+        +mq($small)
+            margin-right: 0
+            margin-left: 0
+            margin-bottom: 33px
+            // height: auto
+            order: 2
+            font-size: 19px
+
+
+
+    &__item-text
+        margin-bottom: 12px
+        order: 2
+        color: #939393
+        font-size: 16px
+        font-weight: 700
+        text-transform: uppercase
+        +tr(.3s ease)
+        +mq($small)
+            display: none
+            visibility: hidden
+            opacity: 0
+            order: 3
+
+
