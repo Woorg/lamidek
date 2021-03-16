@@ -8,23 +8,25 @@ mixin header(data)
                     button.nav__trigger
                         != pugHelpers.Icon.call(locals, {iconName: 'burger-icon', className: 'nav__trigger-icon'})
 
-                    button.nav__close
-                        != pugHelpers.Icon.call(locals, {iconName: 'close-icon', className: 'nav__close-icon'})
 
+                    .nav__list-w
 
-                    ul.nav__list
-                        li.nav__item.nav__item_current
-                            a.nav__link(href="#") О нас
-                        li.nav__item
-                            a.nav__link(href="#") Продукция
-                        li.nav__item
-                            a.nav__link(href="#") Производство
-                        li.nav__item
-                            a.nav__link(href="#") Техническая информация
-                        li.nav__item
-                            a.nav__link(href="#") Сферы применения
-                        li.nav__item
-                            a.nav__link(href="#") Контакты
+                        button.nav__close
+                            != pugHelpers.Icon.call(locals, {iconName: 'close-icon', className: 'nav__close-icon'})
+
+                        ul.nav__list
+                            li.nav__item.nav__item_current
+                                a.nav__link(href="#") О нас
+                            li.nav__item
+                                a.nav__link(href="#") Продукция
+                            li.nav__item
+                                a.nav__link(href="#") Производство
+                            li.nav__item
+                                a.nav__link(href="#") Техническая информация
+                            li.nav__item
+                                a.nav__link(href="#") Сферы применения
+                            li.nav__item
+                                a.nav__link(href="#") Контакты
 
 
                 a.header__phone.phone(href="tel+88005117731")

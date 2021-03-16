@@ -4,13 +4,36 @@
         +resetbutton()
         width: 51px
         height: 34px
+        color: #C4C4C4
+        +tr(.3s ease)
         +mq($large)
             display: none
+        &:hover
+            color: darken(#C4C4C4, 10)
+            +tr(.3s ease)
+
 
     &__close
         +resetbutton()
         display: none
+        color: #C4C4C4
+        +tr(.3s ease)
+        &:hover
+            color: darken(#C4C4C4, 10)
+            +tr(.3s ease)
 
+    &__list-w
+        position: relative
+        height: 0
+        opacity: 0
+        visibility: hidden
+        // transform: translateY(-100%)
+        +tr(.5s ease)
+        +mq($large)
+            height: auto
+            opacity: 1
+            visibility: visible
+            transform: none
     &__list
         display: none
         +mq($large)
@@ -31,31 +54,42 @@
         line-height: 1.214
         text-transform: uppercase
         text-decoration: none
+        +tr(.3s ease)
+
         &:hover
-            font-weight: 700
+            color: lighten(#000, 10)
+            +tr(.3s ease)
 
 
 .nav_primary
     &.nav_active
-        .nav__close
 
+        .nav__list-w
+            position: absolute
+            top: calc(100% + 13px)
+            left: 0
+            width: 250px
+            height: auto
+            opacity: 1
+            visibility: visible
+            // transform: translateY(0%)
+            +tr(.5s ease)
+
+
+        .nav__close
             z-index: 1
             position: absolute
-            top: calc(100% + 21px)
+            top: 16px
             right: 20px
             display: block
         .nav__list
             // z-index: -1
-            position: absolute
-            top: calc(100% + 13px)
-            left: 0
             padding-top: 30px
             padding-right: 30px
             padding-left: 30px
             padding-bottom: 25px
             display: flex
             flex-wrap: wrap
-            width: 250px
             background-color: #ffffff
 
             // &:before

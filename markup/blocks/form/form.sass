@@ -10,12 +10,14 @@
 
     &__label-text
         position: relative
-        padding-left: 32px
+        padding-left: 24px
         color: #000000
         font-family: $g
         font-size: 14px
         line-height: 1.29
         text-align: left
+        +mq($small)
+            padding-left: 32px
         +mq($large)
             font-size: 16px
             font-weight: 400

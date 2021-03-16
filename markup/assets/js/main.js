@@ -19,7 +19,7 @@ import Swiper, {Pagination, Navigation, Controller, EffectFade, Lazy, Scrollbar,
 
     const $navClose = $('.nav__close');
     $navClose.on('click', function() {
-       $(this).parent().removeClass('nav_active');
+       $(this).parent().parent().removeClass('nav_active');
 
     });
 
