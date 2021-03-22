@@ -1,0 +1,119 @@
+.mounting
+    background-image: linear-gradient(to bottom, #f8f8f8 0%, rgba(248, 248, 248, 0) 100%)
+    overflow: hidden
+    +mq($medium)
+        background-image: linear-gradient(to right, #f8f8f8 0%, rgba(248, 248, 248, 0) 100%)
+    &__container
+        padding-top: 30px
+        padding-bottom: 30px
+        +mq($medium)
+            padding-top: $p
+            padding-bottom: $p
+
+    &__title-w
+        position: relative
+        padding-right: 120px
+        +mq($medium)
+            padding-right: 0
+
+    &__title
+        margin-bottom: $mb
+
+    &__list
+        margin-bottom: 50px
+        display: flex
+        flex-wrap: wrap
+        counter-reset: list
+    &__item
+        position: relative
+        margin-bottom: 40px
+        padding-left: 70px
+        width: 100%
+        +mq($medium)
+            margin-bottom: 50px
+            padding-left: 75px
+            padding-right: 50px
+            max-width: 50%
+
+        &:last-child
+            margin-bottom: 0
+            +mq($medium)
+                margin-bottom: 50px
+
+        &:before
+            position: absolute
+            top: -8px
+            left: 0
+            counter-increment: list
+            content: counter(list)
+            color: rgba(239, 126, 32, 0.29)
+            font-size: 96px
+            font-weight: 700
+            text-transform: uppercase
+            +mq($medium)
+                top: auto
+                bottom: 0
+                line-height: 64px
+
+
+    &__item-title
+        margin-bottom: 8px
+        font-size: 24px
+        font-weight: 700
+        line-height: 1
+        text-transform: uppercase
+
+    &__item-text
+        font-size: 18px
+        font-weight: 400
+        line-height: 1.5
+
+    &__row
+        display: flex
+        flex-wrap: wrap
+        +mq($medium)
+            margin-right: -15px
+            margin-left: -15px
+
+
+    &__image,
+    &__entry
+        width: 100%
+        +mq($medium)
+            padding-right: 15px
+            padding-left: 15px
+            max-width: 50%
+
+    &__entry
+        padding-top: 20px
+
+    &__image
+        margin-right: -20px
+        margin-left: -20px
+        width: 100vw
+        +mq($medium)
+            margin-right: 0
+            margin-left: 0
+            padding-right: 15px
+            padding-left: 15px
+            width: auto
+            // min-width: 50%
+            // min-width: 100%
+
+
+    &__text
+        margin-bottom: 22px
+        font-size: 18px
+        font-weight: 400
+        line-height: 1.5
+        text-align: left
+
+    &__button
+        height: 55px
+        font-size: 24px
+
+
+.mounting_second
+    background-image: linear-gradient(to bottom, #f8f8f8 0%, rgba(248, 248, 248, 0) 100%)
+    +mq($medium)
+        background-image: linear-gradient(to left, #f8f8f8 0%, rgba(248, 248, 248, 0) 100%)

@@ -1,0 +1,114 @@
+mixin delivery(data)
+    section.delivery#section-4
+
+        .delivery__container.container
+            .delivery__title-w
+                h2.delivery__title.title Доставка
+
+                a.delivery__to-bottom.to-bottom.js-to-bottom(href='#section-5')
+                    != pugHelpers.Icon.call(locals, {iconName: 'to-bottom-icon', className: 'to-bottom__icon'})
+
+            .delivery__row
+                .delivery__entry
+                    h3.delivery__entry-title.title.title_second
+                        != pugHelpers.Icon.call(locals, {iconName: 'like-icon', className: 'title__icon'})
+                        | Заголовок
+
+                    .delivery__entry-text.text
+                        p Lorem ipsum dolor sit amet, mel noster imperdiet complectitur cu, fabulas graecis lobortis usu id.  Lorem ipsum dolor sit amet, mel noster imperdiet complectitur cu, fabulas graecis lobortis usu id.  Lorem ipsum dolor sit amet, mel noster imperdiet complectitur cu, fabulas graecis lobortis usu id.  Lorem ipsum dolor sit amet, mel noster imperdiet complectitur cu, fabulas graecis lobortis usu id.  Lorem ipsum dolor sit amet, mel noster imperdiet complectitur cu, fabulas graecis lobortis usu id.  Lorem ipsum dolor sit amet, mel noster imperdiet complectitur cu, fabulas graecis lobortis usu id.
+                .delivery__entry
+                    h3.delivery__entry-title.title.title_second
+                        != pugHelpers.Icon.call(locals, {iconName: 'like-icon', className: 'title__icon'})
+                        | Заголовок
+
+                    .delivery__entry-text.text
+                        p Lorem ipsum dolor sit amet, mel noster imperdiet complectitur cu, fabulas graecis lobortis usu id.  Lorem ipsum dolor sit amet, mel noster imperdiet complectitur cu, fabulas graecis lobortis usu id.  Lorem ipsum dolor sit amet, mel noster imperdiet complectitur cu, fabulas graecis lobortis usu id.  Lorem ipsum dolor sit amet, mel noster imperdiet complectitur.
+
+
+
+            .delivery__row#section-5
+                .delivery__form
+                    .delivery__form-w
+                        .delivery__form-title.title.title_second Заполните заявку
+
+                        form(action="" method="")
+                            .form__field.form__field_label_text
+                                label.form__label Имя
+                                    input.form__input(type="input" name="" value="" checked)
+
+                            .form__field.form__field_label_text
+                                label.form__label Фамилия
+                                    input.form__input(type="input" name="" value="" checked)
+
+                            .form__field.form__field_label_text
+                                label.form__label Телефон
+                                    input.form__input(type="input" name="" value="" checked)
+
+                            .form__field_submit
+                                input.delivery__form-submit.form__submit.button(type="submit" value="Отправить")
+
+
+
+                .delivery__col
+
+                    .delivery__row.delivery__row_second
+                        .delivery__entry
+                            h3.delivery__entry-title.title.title_third
+                                != pugHelpers.Icon.call(locals, {iconName: 'title-icon-3', className: 'title__icon'})
+                                | Заголовок
+
+                            .delivery__entry-text.text
+                                p Lorem ipsum dolor sit amet, mel noster imperdiet complectitur cu, fabulas graecis lobortis usu id.
+
+                        .delivery__entry
+                            h3.delivery__entry-title.title.title_third
+                                != pugHelpers.Icon.call(locals, {iconName: 'title-icon-3', className: 'title__icon'})
+                                | Заголовок
+
+                            .delivery__entry-text.text
+                                p Lorem ipsum dolor sit amet, mel noster imperdiet complectitur cu, fabulas graecis lobortis usu id.
+
+
+
+                    .delivery__filter.filter-panels
+                        .filter-panels__title
+                            != pugHelpers.Icon.call(locals, {iconName: 'select-panels', className: 'filter-panels__icon'})
+                            | Выбрать тип панелей:
+
+                        form(action="" method="").filter-panels__form.form
+                            .filter-panels__row.form__row
+                                .filter-panels__field.form__field.form__field_checkbox
+                                    label.form__label
+                                        input.form__checkbox(type="checkbox" name="" value="" checked)
+
+                                        span.form__label-text бюджетные
+
+                                .filter-panels__field.form__field.form__field_checkbox
+                                    label.form__label
+                                        input.form__checkbox(type="checkbox" name="" value="" checked)
+                                        span.form__label-text негорючие
+
+
+                                .filter-panels__field.form__field.form__field_checkbox
+                                    label.form__label
+                                        input.form__checkbox(type="checkbox" name="" value="" checked)
+                                        span.form__label-text износостойкие
+
+                                .filter-panels__field.form__field.form__field_checkbox
+                                    label.form__label
+                                        input.form__checkbox(type="checkbox" name="" value="" checked)
+                                        span.form__label-text влагостойкие
+
+                                .filter-panels__field.form__field.form__field_checkbox
+                                    label.form__label
+                                        input.form__checkbox(type="checkbox" name="" value="" checked)
+                                        span.form__label-text трудногорючие
+
+                                .filter-panels__field.form__field.form__field_checkbox
+                                    label.form__label
+                                        input.form__checkbox(type="checkbox" name="" value="" checked)
+                                        span.form__label-text антивандальные
+
+
+                            input.filter-panels__submit.button(type="submit" value="Применить")
+

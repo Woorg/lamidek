@@ -32,8 +32,16 @@
     &__button
         position: absolute
         top: 50%
+        width: 30px
+        height: 30px
+        color: #FFF
+
         cursor: pointer
         transform: translateY(-50%)
+        +tr(.3s ease)
+        &:hover
+            color: darken(#FFF, 10)
+            +tr(.3s ease)
 
     &__button_prev
         left: 10px
@@ -42,6 +50,7 @@
 
     &__button_next
         right: 10px
+        transform: translateY(-50%)
 
 
     .swiper-pagination-bullet

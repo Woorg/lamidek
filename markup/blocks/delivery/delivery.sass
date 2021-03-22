@@ -1,0 +1,92 @@
+.delivery
+    &__container
+        padding-top: $p
+        padding-bottom: $p
+
+    &__title-w
+        position: relative
+
+    &__title
+        margin-bottom: 60px
+
+    &__row
+        margin-bottom: 40px
+        display: flex
+        flex-wrap: wrap
+        +mq($medium)
+            margin-right: -15px
+            margin-left: -15px
+
+
+        &:last-child
+            margin-bottom: 0
+
+    // &__row_second
+    //     margin-bottom: 60px
+
+    &__entry,
+    &__col,
+    &__form
+        width: 100%
+        +mq($medium)
+            padding-right: 15px
+            padding-left: 15px
+            max-width: 50%
+
+    &__entry
+        margin-bottom: 50px
+        +mq($medium)
+            margin-bottom: 0
+
+        &:last-child
+            margin-bottom: 0
+            +mq($medium)
+                margin-bottom: 0
+
+
+    &__entry-title
+        // margin-bottom: 14px
+        margin-bottom: 22px
+
+        // +mq($medium)
+        //     margin-bottom: 22px
+
+
+    &__form
+        margin-bottom: 47px
+        +mq($medium)
+            margin-bottom: 0
+            padding-right: 70px
+
+    &__form-w
+        padding-top: 40px
+        padding-right: 20px
+        padding-bottom: 40px
+        padding-left: 20px
+        min-height: 519px
+        box-shadow: 0 4px 25px rgba(0, 0, 0, 0.13)
+        +mq($medium)
+            padding-top: 50px
+            padding-right: 50px
+            padding-bottom: 37px
+            padding-left: 50px
+
+
+
+
+    &__form-title
+        margin-bottom: 30px
+
+
+    // &__text
+
+    .delivery__form-submit
+        margin-top: 35px
+        width: auto
+        height: 55px
+        display: inline-flex
+        justify-content: center
+        font-size: 24px
+
+
+

@@ -1,0 +1,49 @@
+mixin objects(data)
+    section.objects
+        .objects__container.container
+            h2.objects__title.title Объекты
+
+            .objects__slider.slider.swiper-container.js-objects-slider
+                .swiper-wrapper
+                    .swiper-slide
+                        img.slider__image(src="assets/images/content/object-img-1.jpg", alt="")
+
+                    .swiper-slide
+                        img.slider__image(src="assets/images/content/object-img-1.jpg", alt="")
+
+                    .swiper-slide
+                        img.slider__image(src="assets/images/content/object-img-1.jpg", alt="")
+
+                    .swiper-slide
+                        img.slider__image(src="assets/images/content/object-img-1.jpg", alt="")
+
+                    .swiper-slide
+                        img.slider__image(src="assets/images/content/object-img-1.jpg", alt="")
+
+
+                .slider__pagination-w
+
+                    .swiper-pagination.slider__pagination
+
+                    .slider__button.slider__button_prev
+                        != pugHelpers.Icon.call(locals, {iconName: 'slider-arrow', className: 'slider__button-icon'})
+                    .slider__button.slider__button_next
+                        != pugHelpers.Icon.call(locals, {iconName: 'slider-arrow', className: 'slider__button-icon'})
+
+
+//-         // Slider main container
+//- .swiper-container
+//-     // Additional required wrapper
+//-     .swiper-wrapper
+//-         // Slides
+//-         .swiper-slide Slide 1
+//-         .swiper-slide Slide 2
+//-         .swiper-slide Slide 3
+//-         |     ...
+//-     // If we need pagination
+//-     .swiper-pagination
+//-     // If we need navigation buttons
+//-     .swiper-button-prev
+//-     .swiper-button-next
+//-     // If we need scrollbar
+//-     .swiper-scrollbar

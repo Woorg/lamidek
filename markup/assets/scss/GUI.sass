@@ -6,15 +6,35 @@
   display: flex
   align-items: center
   color: #000000
-  font-size: 38px
+  font-size: 36px
   font-weight: 700
   text-align: left
+  line-height: 1.4
   text-transform: uppercase
   +mq($small)
-    font-size: 36px
+    font-size: 38px
 
   &__icon
     margin-right: 18px
+
+.title_second,
+.title_third
+  font-size: 24px
+  +mq($small)
+    font-size: 24px
+
+  .title__icon
+    margin-top: -20px
+
+
+.title_third
+  flex-wrap: wrap
+  flex-direction: column
+  align-items: flex-start
+
+  .title__icon
+    margin-top: 0
+    margin-bottom: 12px
 
 
 .button
@@ -43,54 +63,67 @@
     +tr(background-color .3s linear)
 
 
+.button_bigger
+  height: 55px
+  font-size: 24px
+
+.to-bottom
+  +resetbutton()
+  position: absolute
+  top: 50%
+  right: 0
+  display: block
+  transform: translateY(-50%)
+  +mq($medium)
+    display: none
+
+  &__icon
+    fill: transparent
 
 .text
   color: #000000
-  +font-size(16px)
+  font-size: 18px
   font-weight: 400
 
   h2,
   h3
-    margin-bottom: (25px / 2)
-    color: #1f1f1f
-    font-size: 22px
+    color: #000000
+    font-size: 36px
     font-weight: 700
-    letter-spacing: -0.44px
-    +mq($small)
-      margin-bottom: 25px
+    text-align: left
+    text-transform: uppercase
+    line-height: 1.3
 
   h3
-    font-size: 18px
+    font-size: 24px
 
 
   p
-    margin-bottom: (40px / 2)
-    letter-spacing: -0.32px
-    line-height: 1.375
-    +mq($small)
-      margin-bottom: 40px
-
+    margin-bottom: 22px
+    font-size: 18px
+    font-weight: 400
+    line-height: 1.5
     &:last-of-type
         margin-bottom: 0
 
-  a
+  // a
 
-    color: #6a7bff
-    font-size: 14px
-    font-weight: 500
-    font-style: normal
-    line-height: 1
-    text-transform: uppercase
-    text-decoration: none
-    +tr(.3s linear)
-    +mq($small)
-      font-size: 18px
+  //   color: #6a7bff
+  //   font-size: 14px
+  //   font-weight: 500
+  //   font-style: normal
+  //   line-height: 1
+  //   text-transform: uppercase
+  //   text-decoration: none
+  //   +tr(.3s linear)
+  //   +mq($small)
+  //     font-size: 18px
 
-    &:hover
-        color: darken(#e51515, 10)
-        +tr(.3s linear)
+  //   &:hover
+  //       color: darken(#e51515, 10)
+  //       +tr(.3s linear)
 
-  img
-    margin-bottom: (40px / 2)
-    +mq($small)
-      margin-bottom: 40px
+  // img
+  //   margin-bottom: (40px / 2)
+  //   +mq($small)
+  //     margin-bottom: 40px

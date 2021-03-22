@@ -1,0 +1,50 @@
+.objects
+    background-color: #ffffff
+    box-shadow: 0 -7px 22px rgba(0, 0, 0, 0.08)
+
+    &__container
+        padding-top: 30px
+        padding-bottom: 30px
+        +mq($medium)
+            padding-top: $p
+            padding-bottom: $p
+
+    &__title
+        margin-bottom: 25px
+        +mq($medium)
+            margin-bottom: $mb
+
+    &__slider
+        margin-right: -15px
+        margin-left: -15px
+
+    .swiper-slide
+        padding-right: 15px
+        padding-left: 15px
+
+    .slider__image
+        width: 100%
+        object-fit: cover
+        object-position: 50% 0
+
+    .slider__pagination-w
+        position: relative
+        margin-top: 30px
+        bottom: auto
+        display: inline-flex
+        background: transparent
+        min-width: 185px
+
+        .slider__button
+            color: #878787
+            &:hover
+                color: darken(#878787, 10)
+
+        .swiper-pagination-bullet
+            background-color: #c6c6c6
+
+            &:hover
+                background-color: darken(#c6c6c6, 10)
+
+        .swiper-pagination-bullet-active
+            background-color: #9f9f9f

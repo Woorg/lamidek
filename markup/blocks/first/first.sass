@@ -1,1 +1,461 @@
+.first
+    position: relative
+    overflow: hidden
+    &:after
+        z-index: -1
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        content: ''
+        // width: 375px
+        height: 400px
+        background-color: #ef7e20
+        display: none
+        +mq($large)
+            right: -45px
+            left: auto
+            width: 50%
+            height: 100%
+            display: block
+
+    &__container
+        padding-top: 33px
+        padding-bottom: 74px
+        display: flex
+        justify-content: flex-start
+        align-items: flex-start
+        flex-wrap: wrap
+
+
+    &__breadcrumbs
+        margin-bottom: 34px
+
+    &__row
+        display: flex
+        align-items: flex-start
+        flex-wrap: wrap
+        +mq($large)
+            margin-right: -15px
+            margin-left: -15px
+
+
+
+    &__entry,
+    &__scheme
+        width: 100%
+        +mq($large)
+            padding-right: 15px
+            padding-left: 15px
+            max-width: 50%
+
+
+    &__entry
+        margin-bottom: 70px
+        margin-bottom: 0
+        +mq($large)
+            margin-bottom: 40px
+
+
+    &__title
+        margin-bottom: 7px
+
+    &__text
+        margin-bottom: 44px
+        font-size: 18px
+        font-weight: 400
+        line-height: 1.5
+
+
+    &__nav-list
+        margin-bottom: 40px
+        &:last-child
+            margin-bottom: 0
+            +mq($small)
+                margin-bottom: 0
+
+    &__nav-item
+        margin-bottom: 40px
+        padding-left: 40px
+        &:last-child
+            margin-bottom: 0
+
+    &__nav-link
+        position: relative
+        display: inline-flex
+        align-items: center
+        color: #000000
+        font-size: 20px
+        font-weight: 400
+        text-transform: uppercase
+        text-decoration: none
+        box-shadow: inset 0 -2px 0 #000000
+        +tr(.3s ease)
+
+        &:hover
+            box-shadow: inset 0 -2px 0 transparent
+            +tr(.3s ease)
+
+
+    &__nav-icon
+        position: absolute
+        top: 50%
+        left: -40px
+        transform: translateY(-50%)
+
+    &__use-cases
+        margin-top: 50px
+        width: 100%
+        +mq($small)
+            margin-top: 0
+        +mq($large)
+            margin-top: -320px
+            margin-left: 15px
+            max-width: 515px
+
+
+    &__scheme
+        position: relative
+        // top: -33px
+        right: -20px
+        left: -20px
+        padding-top: 50px
+        padding-bottom: 96px
+        width: 100vw
+        display: flex
+        // +mq($medium)
+
+        +mq($large)
+            margin-bottom: 0
+            padding-bottom: 730px
+            width: 100%
+            // width: auto
+            display: block
+
+
+
+        &:after
+            z-index: -1
+            position: absolute
+            bottom: 0
+
+            // top: 50px
+            left: -50px
+            right: -50px
+            content: ''
+            height: 283px
+            // width: 375px
+            background-color: #ef7e20
+            // +mq($medium)
+
+
+            +mq($large)
+                bottom: 0
+                height: 100%
+                display: none
+
+
+
+    &__scheme-w
+        position: relative
+        // top: -50px
+        // right: -20px
+        // width: 100%
+        margin-left: auto
+        // width: 100%
+        width: 370px
+        height: 269px
+        +mq($small)
+            // right: -47px
+            right: 7px
+
+            width: 377px
+
+        +mq($medium)
+            right: 8px
+        //     right: -50px
+
+        +mq($large)
+            position: absolute
+            top: -47px
+            right: -135px
+
+            width: auto
+            height: auto
+
+    &__scheme-img
+        width: 100%
+        display: flex
+        +mq($large)
+            width: 850px
+            height: auto
+            // width: auto
+        img
+            width: 100%
+        //     +mq($medium)
+
+
+    &__scheme-markers
+        position: absolute
+        top: 0
+        right: 0
+        bottom: 0
+        left: 0
+        // width: 377px
+        // height: 269px
+        +mq($medium)
+            top: 0
+            right: 0
+            left: 0
+            width: 100%
+            height: 100%
+
+
+    &__scheme-marker
+        position: absolute
+
+    &__scheme-marker_active
+        .first__scheme-button
+            transform: scale(1.5)
+            +mq($large)
+                transform: scale(1)
+
+    &__scheme-marker_1
+        top: 75%
+        left: 10.35%
+        // 850px
+        +mq($large)
+            // top: calc(100% - 244px)
+            top: 68%
+            // left: 120px
+            left: 26%
+
+        + .first__bubble
+            +mq($large)
+                top: 82%
+                left: 21%
+
+
+    &__scheme-marker_2
+        top: 31%
+        left: 41%
+        +mq($large)
+            // top: 100px
+            top: 21.5%
+            // left: 246px
+            left: 40.5%
+
+        + .first__bubble
+            +mq($large)
+                top: -2.5%
+                left: 23.5%
+
+            &:after
+                +mq($large)
+                    top: auto
+                    bottom: -32px
+                    left: auto
+                    right: 50px
+                    width: 0
+                    height: 0
+                    border-style: solid
+                    border-width: 32px 19px 0 19px
+                    border-color: #ffffff transparent transparent transparent
+
+
+    &__scheme-marker_3
+        top: 43%
+        left: 13%
+        +mq($large)
+            // top: 195px
+            top: 34%
+            // left: 240px
+            left: 40%
+
+
+        + .first__bubble
+            +mq($large)
+                top: 49%
+                left: 23%
+            &:after
+
+                +mq($large)
+                    left: auto
+                    right: 50px
+
+    &__scheme-marker_4
+        top: 31%
+        left: auto
+        right: 6%
+        +mq($large)
+            // top: 12px
+            top: 9%
+            left: auto
+            // right: 15px
+            right: 21%
+
+        + .first__bubble
+            +mq($large)
+                top: 24%
+                left: auto
+                right: 16%
+
+            &:after
+                +mq($large)
+                    left: auto
+                    right: 50px
+
+    &__scheme-marker_5
+        top: 53%
+        left: 52%
+        +mq($large)
+            // top: 296px
+            top: 48%
+            // left: 398px
+            left: 58%
+
+        + .first__bubble
+            +mq($large)
+                top: 62%
+                left: 53%
+
+
+    &__scheme-button
+        +resetbutton()
+        width: 50px
+        height: 50px
+        +mq($large)
+            width: 57px
+            height: 57px
+
+    &__scheme-icon
+        width: 100%
+        height: 100%
+
+
+    &__bubble
+        z-index: 1
+        position: absolute
+        top: 100%
+        padding-top: 20px
+        padding-right: 10px
+        padding-bottom: 15px
+        padding-left: 20px
+        // height: auto
+        height: 0
+        visibility: hidden
+
+        background-color: #ffffff
+        opacity: 0
+        box-shadow: 5px 4px 15px rgba(0, 0, 0, 0.17)
+        +mq($large)
+            width: 246px
+            height: 108px
+
+        &:after
+            position: absolute
+            top: -32px
+            left: 50%
+            width: 0
+            height: 0
+            content: ''
+            border-style: solid
+            border-width: 0 19px 32px 19px
+            border-color: transparent transparent #ffffff transparent
+            transform: translateX(-50%)
+            +mq($large)
+                left: 50px
+                transform: none
+
+
+    &__bubble_active
+        top: calc(100% + 30px)
+        right: 20px
+        // left: 20px
+        padding-top: 16px
+        padding-right: 16px
+        padding-bottom: 16px
+        padding-left: 16px
+        // width: 100%
+        // width: 335px
+        width: 88vw
+        height: 132px
+        visibility: visible
+        opacity: 1
+        // transform: translateX(-50%)
+        +mq($large)
+            right: auto
+            width: 243px
+            height: 109px
+            visibility: visible
+            opacity: 1
+
+
+    &__bubble-close
+        z-index: 2
+        position: absolute
+        top: 14px
+        right: 6px
+        +resetbutton()
+        width: 11px
+        height: 11px
+
+
+    &__bubble-title
+        margin-bottom: 4px
+        font-size: 18px
+        font-weight: 700
+        line-height: 1.5
+        text-transform: uppercase
+
+    &__bubble-text
+        font-size: 16px
+        font-weight: 400
+        line-height: 1.5
+
+    &__close-icon
+        width: 100%
+        height: 100%
+
+
+
+    &__bubble-nav
+        position: absolute
+        bottom: 0
+        right: 20px
+        max-width: 70px
+        width: 100%
+        height: 20px
+        +mq($large)
+            display: none
+
+
+    .swiper-container
+        padding-bottom: 30px
+        height: 100%
+
+    .slider__button
+        width: 30px
+        height: 20px
+        color: #878787
+
+    .slider__button_prev
+        left: 0
+    .slider__button_next
+        right: 0
+
+    .slider__button-icon
+        width: 100%
+        height: 100%
+
+
+
+
+
+    // &__scheme-marker
+
+
+
+
 

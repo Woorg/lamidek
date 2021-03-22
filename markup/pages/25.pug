@@ -1,0 +1,40 @@
+doctype html
+html(class="no-js", lang="ru")
+
+    include ../blocks/head/head.pug
+    include ../blocks/header/header.pug
+    include ../blocks/panels-nav/panels-nav.pug
+    include ../blocks/breadcrumbs/breadcrumbs.pug
+
+    include ../blocks/first/first.pug
+    include ../blocks/objects/objects.pug
+    include ../blocks/mounting/mounting.pug
+    include ../blocks/delivery/delivery.pug
+
+
+
+    //- include ../blocks/catalog/catalog.pug
+
+
+    include ../blocks/footer/footer.pug
+
+    head
+        +head(head.defaults)
+    body.page
+        |%=symbols=%
+        +header()
+        main.page__inner
+            +panels-nav()
+            +first()
+            +objects()
+            +mounting()
+            +mounting-second().mounting_second
+            +delivery()
+
+
+        .page__bottom
+            +footer()
+
+        script(src='%=static=%js/separate-js/jquery.min.js')
+        //- script(src='%=static=%js/separate-js/swiper-bundle.min.js')
+        script(src='%=static=%js/main%=hash=%%=min=%.js')

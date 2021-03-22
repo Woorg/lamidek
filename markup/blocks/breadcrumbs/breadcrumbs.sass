@@ -1,0 +1,45 @@
+.breadcrumbs
+    padding-bottom: 39px
+    width: 100%
+    display: none
+    +mq($medium)
+        display: block
+    // &__container
+    //     padding-top: 34px
+
+    &__list
+        display: flex
+        justify-content: flex-start
+        align-items: center
+        flex-wrap: wrap
+
+    &__item
+        display: flex
+        align-items: center
+        text-decoration: none
+        line-height: 1
+
+    &__sep
+        margin-right: 8px
+        margin-left: 4px
+        fill: transparent
+
+    &__link
+        color: #bfbfbf
+        font-size: 16px
+        font-weight: 400
+        line-height: 1.5
+        text-decoration: none
+        +tr(.3s ease)
+
+        &:hover
+            color: #858585
+            +tr(.3s ease)
+
+
+    &__last
+        color: #858585
+        text-transform: uppercase
+
+
+
