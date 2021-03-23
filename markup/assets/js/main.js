@@ -107,6 +107,8 @@ import {certificatesGallery, certificatesSlider} from '../../blocks/certificates
       'index',
       '25',
       '28',
+      '30',
+
 
 
     ]);
