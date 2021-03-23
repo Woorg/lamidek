@@ -1,0 +1,56 @@
+doctype html
+html(class="no-js", lang="ru")
+
+    include ../blocks/head/head.pug
+    include ../blocks/header/header.pug
+    include ../blocks/panels-nav/panels-nav.pug
+    include ../blocks/breadcrumbs-31/breadcrumbs-31.pug
+
+    include ../blocks/first-31/first-31.pug
+    include ../blocks/page-nav/page-nav.pug
+    include ../blocks/decor/decor.pug
+    include ../blocks/advantages-31/advantages-31.pug
+
+    include ../blocks/features-31/features-31.pug
+    include ../blocks/certificates/certificates.pug
+    include ../blocks/usage/usage.pug
+    include ../blocks/cta/cta.pug
+    include ../blocks/cta-second/cta-second.pug
+
+    //- include ../blocks/objects/objects.pug
+    include ../blocks/mounting-30/mounting-30.pug
+    include ../blocks/delivery-28/delivery-28.pug
+
+
+    //- include ../blocks/catalog/catalog.pug
+
+
+    include ../blocks/footer/footer.pug
+
+    head
+        +head(head.defaults)
+    body.page
+        |%=symbols=%
+        +header()
+        main.page__inner
+            +panels-nav()
+            +first-31()
+            +decor()
+            +advantages-31()
+            +features-31()
+            //- +certificates()
+            +usage()
+            //- +cta()
+            //- +objects()
+            +mounting-30()
+            +delivery-28()
+            +cta-second()
+
+        .page__bottom
+            +footer()
+
+        script(src='%=static=%js/separate-js/jquery.min.js')
+        script(src='%=static=%js/separate-js/jquery.magnific-popup.min.js')
+
+        //- script(src='%=static=%js/separate-js/swiper-bundle.min.js')
+        script(src='%=static=%js/main%=hash=%%=min=%.js')

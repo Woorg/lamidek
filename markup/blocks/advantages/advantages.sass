@@ -1,0 +1,53 @@
+.advantages
+    &__container
+        padding-top: 30px
+        padding-bottom: 30px
+        +mq($large)
+            padding-top: $p
+            padding-bottom: $p
+
+    &__title-w
+        position: relative
+        padding-right: 120px
+        +mq($medium)
+            padding-right: 0
+
+    &__title
+        margin-bottom: 30px
+        +mq($large)
+            margin-bottom: 60px
+            padding-right: 560px
+    &__list
+        display: flex
+        justify-content: space-between
+        align-items: flex-start
+        flex-wrap: wrap
+        +mq($medium)
+            margin-right: -35px
+            margin-left: -35px
+
+    &__item
+        margin-bottom: 36px
+        width: 100%
+        display: flex
+        align-items: center
+        +mq($medium)
+            padding-right: 35px
+            padding-left: 35px
+            max-width: 50%
+
+    &__icon
+        width: 86px
+        height: 86px
+        flex-shrink: 0
+        +mq($medium)
+            width: 103px
+            height: 103px
+
+
+    &__item-text
+        margin-left: 26px
+        font-weight: 400
+        +mq($medium)
+            font-size: 24px
+            line-height: 1.45

@@ -1,7 +1,11 @@
 mixin objects(data)
-    section.objects
+    section.objects&attributes(attributes)
         .objects__container.container
-            h2.objects__title.title Объекты
+            .objects__title-w
+                h2.objects__title.title Объекты
+                a.objects__to-bottom.to-bottom.js-to-go(href='#section-3')
+                    != pugHelpers.Icon.call(locals, {iconName: 'to-bottom-icon', className: 'to-bottom__icon'})
+
 
             .objects__slider.slider.swiper-container.js-objects-slider
                 .swiper-wrapper

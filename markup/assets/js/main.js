@@ -108,6 +108,8 @@ import {certificatesGallery, certificatesSlider} from '../../blocks/certificates
       '25',
       '28',
       '30',
+      '31',
+
 
 
 

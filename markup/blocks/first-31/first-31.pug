@@ -1,0 +1,216 @@
+mixin first-31(data)
+    .first.first_31
+        .first__container.container
+            +breadcrumbs-31().first__breadcrrumbs
+            .first__row
+                .first__entry
+                    h1.first__title.title Потолки негорючие
+
+                    .first__price от 500 р/м2
+
+                    .first__text Эстетичный декоративный материал, обладающий высокими противопожарными характеристиками. Легок в монтаже, устойчив к перепаду температур. Благодаря экологически чистому составу успешно применяется в образовательных и медицинских учреждениях.
+
+
+                    a.first__button.button.button_bigger(href="#") Узнать наличие на складе
+
+
+                    .first__filter-panels.filter-panels
+                        h2.filter-panels__title
+                            != pugHelpers.Icon.call(locals, {iconName: 'select-panels', className: 'filter-panels__icon'})
+                            | Выбрать другие панели:
+
+                        form(action="").filter-panels__form.form
+                            .filter-panels__row.form__row
+                                .filter-panels__field.form__field.form__field_checkbox
+                                    label.form__label
+                                        input.form__checkbox(type="checkbox" name="" value="" checked)
+
+                                        span.form__label-text бюджетные
+
+                                .filter-panels__field.form__field.form__field_checkbox
+                                    label.form__label
+                                        input.form__checkbox(type="checkbox" name="" value="" checked)
+                                        span.form__label-text негорючие
+
+
+                                .filter-panels__field.form__field.form__field_checkbox
+                                    label.form__label
+                                        input.form__checkbox(type="checkbox" name="" value="" checked)
+                                        span.form__label-text износостойкие
+
+                                .filter-panels__field.form__field.form__field_checkbox
+                                    label.form__label
+                                        input.form__checkbox(type="checkbox" name="" value="" checked)
+                                        span.form__label-text влагостойкие
+
+                                .filter-panels__field.form__field.form__field_checkbox
+                                    label.form__label
+                                        input.form__checkbox(type="checkbox" name="" value="" checked)
+                                        span.form__label-text трудногорючие
+
+                                .filter-panels__field.form__field.form__field_checkbox
+                                    label.form__label
+                                        input.form__checkbox(type="checkbox" name="" value="" checked)
+                                        span.form__label-text антивандальные
+
+
+                            input.filter-panels__submit.button(type="submit" value="Применить")
+
+
+
+                .first__scheme
+                    .first__scheme-w
+                        .first__scheme-markers
+                            .first__scheme-marker.first__scheme-marker_1
+                                button.first__scheme-button
+                                    != pugHelpers.Icon.call(locals, {iconName: 'scheme-marker', className: 'first__scheme-icon'})
+
+                            .first__bubble
+
+                                button.first__bubble-close
+                                    != pugHelpers.Icon.call(locals, {iconName: 'close-icon', className: 'first__close-icon'})
+
+                                .swiper-container
+                                    .swiper-wrapper
+                                        .swiper-slide
+                                            .first__bubble-title Заголовок
+                                            .first__bubble-text Lorem ipsum dolor sit amet, mel noster imperdiet
+
+                                        .swiper-slide
+                                            .first__bubble-title Заголовок 2
+                                            .first__bubble-text Lorem ipsum dolor sit amet, mel noster imperdiet
+
+                                        .swiper-slide
+                                            .first__bubble-title Заголовок 3
+                                            .first__bubble-text Lorem ipsum dolor sit amet, mel noster imperdiet
+
+                                    .first__bubble-nav
+                                        .slider__button.slider__button_prev
+                                            != pugHelpers.Icon.call(locals, {iconName: 'slider-arrow', className: 'slider__button-icon'})
+                                        .slider__button.slider__button_next
+                                            != pugHelpers.Icon.call(locals, {iconName: 'slider-arrow', className: 'slider__button-icon'})
+
+                            .first__scheme-marker.first__scheme-marker_2
+                                button.first__scheme-button
+                                    != pugHelpers.Icon.call(locals, {iconName: 'scheme-marker', className: 'first__scheme-icon'})
+
+                            .first__bubble
+
+                                button.first__bubble-close
+                                    != pugHelpers.Icon.call(locals, {iconName: 'close-icon', className: 'first__close-icon'})
+
+                                .swiper-container
+                                    .swiper-wrapper
+                                        .swiper-slide
+                                            .first__bubble-title Заголовок
+                                            .first__bubble-text Lorem ipsum dolor sit amet, mel noster imperdiet
+
+                                        .swiper-slide
+                                            .first__bubble-title Заголовок 2
+                                            .first__bubble-text Lorem ipsum dolor sit amet, mel noster imperdiet
+
+                                        .swiper-slide
+                                            .first__bubble-title Заголовок 3
+                                            .first__bubble-text Lorem ipsum dolor sit amet, mel noster imperdiet
+
+                                    .first__bubble-nav
+                                        .slider__button.slider__button_prev
+                                            != pugHelpers.Icon.call(locals, {iconName: 'slider-arrow', className: 'slider__button-icon'})
+                                        .slider__button.slider__button_next
+                                            != pugHelpers.Icon.call(locals, {iconName: 'slider-arrow', className: 'slider__button-icon'})
+
+                            .first__scheme-marker.first__scheme-marker_3
+                                button.first__scheme-button
+                                    != pugHelpers.Icon.call(locals, {iconName: 'scheme-marker', className: 'first__scheme-icon'})
+
+                            .first__bubble
+
+                                button.first__bubble-close
+                                    != pugHelpers.Icon.call(locals, {iconName: 'close-icon', className: 'first__close-icon'})
+
+                                .swiper-container
+                                    .swiper-wrapper
+                                        .swiper-slide
+                                            .first__bubble-title Заголовок
+                                            .first__bubble-text Lorem ipsum dolor sit amet, mel noster imperdiet
+
+                                        .swiper-slide
+                                            .first__bubble-title Заголовок 2
+                                            .first__bubble-text Lorem ipsum dolor sit amet, mel noster imperdiet
+
+                                        .swiper-slide
+                                            .first__bubble-title Заголовок 3
+                                            .first__bubble-text Lorem ipsum dolor sit amet, mel noster imperdiet
+
+                                    .first__bubble-nav
+                                        .slider__button.slider__button_prev
+                                            != pugHelpers.Icon.call(locals, {iconName: 'slider-arrow', className: 'slider__button-icon'})
+                                        .slider__button.slider__button_next
+                                            != pugHelpers.Icon.call(locals, {iconName: 'slider-arrow', className: 'slider__button-icon'})
+
+                            .first__scheme-marker.first__scheme-marker_4
+                                button.first__scheme-button
+                                    != pugHelpers.Icon.call(locals, {iconName: 'scheme-marker', className: 'first__scheme-icon'})
+
+                            .first__bubble
+
+                                button.first__bubble-close
+                                    != pugHelpers.Icon.call(locals, {iconName: 'close-icon', className: 'first__close-icon'})
+
+                                .swiper-container
+                                    .swiper-wrapper
+                                        .swiper-slide
+                                            .first__bubble-title Заголовок
+                                            .first__bubble-text Lorem ipsum dolor sit amet, mel noster imperdiet
+
+                                        .swiper-slide
+                                            .first__bubble-title Заголовок 2
+                                            .first__bubble-text Lorem ipsum dolor sit amet, mel noster imperdiet
+
+                                        .swiper-slide
+                                            .first__bubble-title Заголовок 3
+                                            .first__bubble-text Lorem ipsum dolor sit amet, mel noster imperdiet
+
+                                    .first__bubble-nav
+                                        .slider__button.slider__button_prev
+                                            != pugHelpers.Icon.call(locals, {iconName: 'slider-arrow', className: 'slider__button-icon'})
+                                        .slider__button.slider__button_next
+                                            != pugHelpers.Icon.call(locals, {iconName: 'slider-arrow', className: 'slider__button-icon'})
+
+
+                            .first__scheme-marker.first__scheme-marker_5
+                                button.first__scheme-button
+                                    != pugHelpers.Icon.call(locals, {iconName: 'scheme-marker', className: 'first__scheme-icon'})
+
+                            .first__bubble
+
+                                button.first__bubble-close
+                                    != pugHelpers.Icon.call(locals, {iconName: 'close-icon', className: 'first__close-icon'})
+
+                                .swiper-container
+                                    .swiper-wrapper
+                                        .swiper-slide
+                                            .first__bubble-title Заголовок
+                                            .first__bubble-text Lorem ipsum dolor sit amet, mel noster imperdiet
+
+                                        .swiper-slide
+                                            .first__bubble-title Заголовок 2
+                                            .first__bubble-text Lorem ipsum dolor sit amet, mel noster imperdiet
+
+                                        .swiper-slide
+                                            .first__bubble-title Заголовок 3
+                                            .first__bubble-text Lorem ipsum dolor sit amet, mel noster imperdiet
+
+                                    .first__bubble-nav
+                                        .slider__button.slider__button_prev
+                                            != pugHelpers.Icon.call(locals, {iconName: 'slider-arrow', className: 'slider__button-icon'})
+                                        .slider__button.slider__button_next
+                                            != pugHelpers.Icon.call(locals, {iconName: 'slider-arrow', className: 'slider__button-icon'})
+
+
+                        picture.first__scheme-img
+                            source(srcset='assets/images/content/scheme-img-mob-3.png 1x, assets/images/content/scheme-img-mob-3@2x.png 2x' media='(max-width: 1200px) ')
+                            source(srcset='assets/images/content/scheme-img-mob-3.webp 1x, assets/images/content/scheme-img-mob-3@2x.webp 2x' media='(max-width: 1200px)')
+                            source(type='image/webp' srcset='assets/images/content/scheme-img-3.webp 1x, assets/images/content/scheme-img-3@2x.webp 2x')
+                            img(src='assets/images/content/scheme-img-3.png' srcset='assets/images/content/scheme-img-3.png 1x, assets/images/content/scheme-img-3@2x.png 2x' alt='schema')
+
