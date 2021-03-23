@@ -1,0 +1,155 @@
+.decor
+    box-shadow: 0 -7px 22px rgba(0, 0, 0, 0.08)
+    &__container
+        position: relative
+        padding-top: 30px
+        padding-bottom: 30px
+        +mq($large)
+            padding-top: 148px
+            padding-bottom: $p
+
+    &__page-nav
+        position: absolute
+        top: 43px
+        right: 20px
+        left: 20px
+        +mq($small)
+            right: 30px
+            left: 30px
+
+    &__title
+        margin-bottom: 20px
+        +mq($large)
+            margin-bottom: 30px
+
+    // &__tabs
+
+    &__tabs-top
+        margin-bottom: 40px
+        display: flex
+        align-items: center
+        flex-wrap: wrap
+        +mq($large)
+            margin-bottom: 30px
+
+    &__nav
+        display: flex
+        justify-content: flex-start
+        align-items: center
+        flex-wrap: wrap
+
+    &__nav-item
+        margin-bottom: 25px
+        margin-right: 25px
+        +mq($large)
+            margin-bottom: 0
+            margin-right: 28px
+        &:last-child
+            margin-right: 0
+
+    &__nav-link
+        padding-bottom: 5px
+        color: #000000
+        font-size: 18px
+        font-weight: 400
+        text-transform: uppercase
+        text-decoration: none
+        +tr(.3s ease)
+        &[role=tab][aria-selected=true],
+        &:hover
+            box-shadow: inset 0 -3px 0 #ef7e20
+            +tr(.3s ease)
+
+
+    &__all
+        +mq($large)
+            margin-left: auto
+
+    // &__tabs-content
+
+    // &__tab
+
+    &__slider
+        +mq($small)
+            margin-right: -19px
+            margin-left: -19px
+        // padding-bottom: 100px
+
+    .swiper-wrapper
+        margin-bottom: 20px
+        +mq($small)
+            margin-bottom: 30px
+
+    &__slider-item
+        margin-right: auto
+        margin-left: auto
+        max-width: 204px
+        +mq($small)
+            padding-right: 19px
+            padding-left: 19px
+
+            max-width: 100%
+
+
+    &__slider-link
+        position: relative
+        display: block
+        background-color: #c4c4c4
+        text-decoration: none
+        color: inherit
+        box-shadow: 0 4px 4px rgba(0, 0, 0, .25)
+
+    &__slider-image
+        width: 100%
+        height: 100%
+        display: block
+        object-fit: cover
+
+    &__slider-entry
+        position: absolute
+        bottom: 0
+        left: 0
+        right: 0
+        padding-top: 4px
+        padding-right: 55px
+        padding-bottom: 6px
+        padding-left: 15px
+        min-height: 53px
+        background-color: rgba(255, 255, 255, 0.5)
+
+    &__slider-title
+        font-size: 16px
+        font-weight: 400
+        line-height: 1.5
+
+    &__text
+        margin-top: 20px
+        text-align: center
+        line-height: 1.5
+        +mq($small)
+            margin-top: 10px
+
+
+
+    .slider__pagination-w
+        position: relative
+        left: auto
+        bottom: auto
+        margin-right: auto
+        margin-left: auto
+        transform: none
+        background: transparent
+
+        .slider__button
+            color: #878787
+            &:hover
+                color: darken(#878787, 10)
+
+        .swiper-pagination-bullet
+            background-color: #c6c6c6
+
+            &:hover
+                background-color: darken(#c6c6c6, 10)
+
+        .swiper-pagination-bullet-active
+            background-color: #9f9f9f

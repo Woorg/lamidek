@@ -2,8 +2,35 @@
 
     // &__field_checkbox
 
+    &__field
+        flex-grow: 1
+
+    &__field_row
+        +mq($small)
+            padding-right: 15px
+            padding-left: 15px
+
+
+        .form__select-icon
+            position: absolute
+            right: 13px
+            bottom: 20px
+            width: 24px
+            height: 13px
+            pointer-events: none
+            fill: transparent
+            +mq($small)
+                right: 36px
+
+    &__field_select
+        position: relative
+        // .form__select-icon
+
     &__field_submit
+        width: 100%
         text-align: center
+        +mq($medium)
+            width: auto
 
     &__field_label_text
         margin-bottom: 20px
@@ -14,7 +41,8 @@
             font-weight: 400
             line-height: 1
 
-        .form__input
+        .form__input,
+        .form__select
             margin-top: 6px
 
 
@@ -67,7 +95,8 @@
                 background-size: cover
 
 
-    &__input
+    &__input,
+    &__select
         +resetbutton()
         border: 1px solid #878787
         padding-right: 15px
@@ -76,6 +105,18 @@
         width: 100%
         height: 55px
         flex-grow: 1
+
+    &__select
+        appearance: none
+
+    &__select-icon
+        position: absolute
+        right: 22px
+        bottom: 20px
+        width: 24px
+        height: 13px
+        pointer-events: none
+        fill: transparent
 
 
     &__submit

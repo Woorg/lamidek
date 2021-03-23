@@ -1,0 +1,143 @@
+.usage
+    background-image: linear-gradient(to left, #f8f8f8 0%, rgba(248, 248, 248, 0) 100%)
+    &__container
+        padding-top: 30px
+        padding-bottom: 30px
+        +mq($large)
+            padding-top: $p
+            padding-bottom: $p
+    &__title
+        margin-bottom: 20px
+        +mq($large)
+            margin-bottom: 44px
+
+    &__tabs
+        margin-right: -15px
+        margin-left: -15px
+        display: flex
+        align-items: flex-start
+        flex-wrap: wrap
+
+    &__nav,
+    &__tabs-content
+        padding-right: 15px
+        padding-left: 15px
+        width: 100%
+        +mq($large)
+            max-width: 50%
+
+    &__nav
+        margin-bottom: 30px
+        display: flex
+        align-items: flex-start
+        flex-wrap: wrap
+        +mq($large)
+            margin-bottom: 0
+
+    &__nav-item
+        width: 50%
+        +mq($large)
+            width: 33.3%
+
+    &__nav-link
+        height: 165px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        color: inherit
+        text-decoration: none
+        +tr(.3s ease)
+
+        &[role=tab][aria-selected=true],
+        &:hover
+            background-color: rgba(201, 201, 201, 0.17)
+            +tr(.3s ease)
+
+    &__nav-icon
+        margin-bottom: 27px
+
+    &__nav-text
+        font-size: 20px
+        font-weight: 700
+        text-transform: uppercase
+
+
+    // &__tabs-content
+
+    &__tab
+        position: relative
+        &:after
+            position: absolute
+            top: 20px
+            right: 0
+            bottom: -20px
+            width: 531px
+            height: 349px
+            content: ''
+            background-color: rgba(196, 196, 196, 0.26)
+            +mq($large)
+                top: 30px
+                right: 0
+                bottom: -30px
+
+
+    &__slider
+        margin-right: 20px
+        +mq($large)
+            margin-top: -90px
+            margin-right: 40px
+
+        // background: blue
+
+
+    &__slider-item
+        height: 349px
+        background-color: #c4c4c4
+
+    &__slider-link
+        height: 100%
+        display: block
+
+    &__slider-image
+        width: 100%
+        height: 100%
+        display: block
+        object-fit: cover
+        // display: none
+
+
+    &__all-w
+        margin-top: 50px
+        display: none
+        text-align: center
+        +mq($small)
+            display: block
+
+
+
+    .swiper-wrapper
+        margin-bottom: 40px
+
+    .slider__pagination-w
+        position: relative
+        left: auto
+        bottom: auto
+        margin-right: auto
+        margin-left: auto
+        transform: none
+        background: transparent
+
+        .slider__button
+            color: #878787
+            &:hover
+                color: darken(#878787, 10)
+
+        .swiper-pagination-bullet
+            background-color: #c6c6c6
+
+            &:hover
+                background-color: darken(#c6c6c6, 10)
+
+        .swiper-pagination-bullet-active
+            background-color: #9f9f9f

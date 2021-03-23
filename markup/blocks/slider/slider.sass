@@ -15,7 +15,7 @@
         position: absolute
         bottom: 16px
         left: 50%
-        width: 185px
+        width: 235px
         height: 50px
         display: flex
         justify-content: space-between
@@ -23,11 +23,16 @@
 
         background-color: rgba(0, 0, 0, 0.23)
         transform: translateX(-50%)
+        +mq($large)
+            width: 185px
+
 
     &__pagination
         left: 50%
+        display: flex
+        justify-content: center
+        align-items: center
         transform: translateX(-50%)
-
 
     &__button
         position: absolute

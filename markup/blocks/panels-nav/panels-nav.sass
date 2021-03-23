@@ -52,6 +52,7 @@
 
     &__item
         width: 100%
+        flex-grow: 1
         +mq($large)
             width: auto
 
@@ -73,11 +74,12 @@
             +tr(.3s ease)
 
     &__link
-        padding-top: 27px
         padding-right: 30px
         padding-left: 30px
-        padding-bottom: 17px
-        display: block
+        height: 63px
+        display: flex
+        justify-content: center
+        align-items: center
         color: #fff
         font-size: 16px
         font-weight: 400
@@ -97,7 +99,6 @@
 
 
 
-
 .panels-nav_active
 
     .panels-nav__list
@@ -109,7 +110,6 @@
         flex-wrap: wrap
         // transform: translateY(0%)
         +tr(.5s ease)
-
 
     // .panels-nav__item
     //     width: 100%

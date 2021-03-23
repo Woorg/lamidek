@@ -1,0 +1,67 @@
+.page-nav
+    background-color: #878787
+    // &__container
+    // display: none
+    +mq($large)
+        display: block
+    &.page-nav_sticky
+        position: fixed
+        top: auto
+        right: 0
+        bottom: 0
+        left: 0
+        // position: static
+        z-index: 3
+        +mq($large)
+            top: 0
+
+    &__list
+        display: flex
+        justify-content: space-between
+        flex-direction: column
+        +mq($large)
+            flex-direction: row
+
+    &__item
+        display: flex
+        flex-grow: 1
+
+        &:last-child
+            border-right: none
+
+    &__item_active
+        .page-nav__link
+            border-right: 1px solid #ef7e20
+            border-left: 1px solid #ef7e20
+            background-color: #ef7e20
+
+    &__link
+        z-index: 1
+        position: relative
+        border-right: 1px solid #c0c0c0
+        // border-left: 1px solid #c0c0c0
+        margin-right: -1px
+        margin-left: -1px
+        padding-right: 13px
+        padding-left: 13px
+        height: 67px
+
+        display: flex
+        justify-content: center
+        align-items: center
+
+        flex-grow: 1
+
+        color: #ffffff
+        font-size: 19px
+        font-weight: 400
+        line-height: 1.47
+        text-transform: uppercase
+        text-decoration: none
+
+        +tr(.3s ease)
+
+        &:hover
+            border-right: 1px solid #ef7e20
+            background-color: #ef7e20
+            +tr(.3s ease)

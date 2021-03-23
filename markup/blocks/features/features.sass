@@ -1,0 +1,80 @@
+.features
+    background-image: linear-gradient(to right, #f8f8f8 0%, rgba(248, 248, 248, 0) 100%)
+    &__container
+        padding-top: 30px
+        padding-bottom: 30px
+        +mq($large)
+            padding-top: $p
+            padding-bottom: $p
+
+    &__title
+        margin-bottom: 20px
+        word-break: break-all
+        +mq($large)
+            margin-bottom: 30px
+
+    &__table-w
+        margin-bottom: 40px
+        max-width: 100%
+        overflow-x: scroll
+        +mq($large)
+            overflow-x: auto
+
+    //     overflow-x: scroll
+
+    &__table
+        width: auto
+        table-layout: fixed
+        font-size: 16px
+        font-weight: 400
+        line-height: 1.5
+        text-align: center
+        +mq($large)
+            font-size: 22px
+            line-height: 1.45
+
+        th,
+        td
+            padding-top: 22px
+            padding-right: 25px
+            padding-bottom: 22px
+            padding-left: 25px
+            white-space: nowrap
+            +mq($small)
+                white-space: normal
+            &:last-child
+                white-space: normal
+
+        th
+            border: 1px solid #c4c4c4
+            border-width: 0 1px 1px 0
+            width: 20%
+            text-transform: uppercase
+            +mq($small)
+                padding-top: 0
+                padding-bottom: 0
+            &:last-child
+                border-right: none
+
+        td
+            border: 1px solid #c4c4c4
+            border-width: 0 1px 1px 0
+            padding-top: 22px
+            padding-bottom: 22px
+            // &:first-child
+            &:last-child
+                border-right: none
+
+        tr
+            &:last-child
+                td
+                    border-width: 0 1px 0 0
+
+
+    &__all-w
+        text-align: center
+    &__all
+        display: inline-flex
+        justify-content: center
+
+

@@ -1,0 +1,52 @@
+.certificates
+    overflow: hidden
+    &__container
+        padding-top: 30px
+        padding-bottom: 30px
+        +mq($large)
+            padding-top: $p
+            padding-bottom: $p
+    &__title
+        margin-bottom: 30px
+    &__slider
+        +mq($large)
+            width: 860px
+
+    &__slider-item
+        margin-right: auto
+        margin-left: auto
+        width: 275px
+        +mq($small)
+            width: auto
+
+
+    &__slider-link
+        display: block
+
+
+    .slider__pagination-w
+        position: relative
+        left: auto
+        bottom: auto
+        margin-top: 20px
+        margin-right: auto
+        margin-left: auto
+        transform: none
+        background: transparent
+        +mq($medium)
+            margin-top: 0
+            display: none
+
+        .slider__button
+            color: #878787
+            &:hover
+                color: darken(#878787, 10)
+
+        .swiper-pagination-bullet
+            background-color: #c6c6c6
+
+            &:hover
+                background-color: darken(#c6c6c6, 10)
+
+        .swiper-pagination-bullet-active
+            background-color: #9f9f9f
