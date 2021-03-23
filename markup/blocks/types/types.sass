@@ -1,0 +1,100 @@
+.types
+    overflow: hidden
+    // &__container
+
+    // &__row
+
+    &__col
+        width: 100%
+        +mq($medium)
+            max-width: 50%
+
+        &:first-child
+            padding-top: 60px
+
+        // &:last-child
+
+    &__entry
+        position: relative
+        padding-top: 30px
+        padding-right: 20px
+        padding-bottom: 30px
+        padding-left: 20px
+        color: #ffffff
+        +mq($medium)
+            padding-top: 98px
+            padding-right: 24px
+            padding-left: 33px
+            padding-bottom: 73px
+
+
+        &:after
+            z-index: -1
+            position: absolute
+            top: 0
+            right: 0
+            left: -30px
+            width: 1000px
+            height: 100%
+            content: ''
+            background-color: #ef7e20
+            +mq($medium)
+                left: auto
+
+    &__title
+        margin-bottom: 10px
+
+    &__list
+        display: flex
+        // align-items: flex-start
+        flex-wrap: wrap
+
+    &__item
+        margin-bottom: 35px
+        width: 100%
+        text-align: center
+        +mq($medium)
+            max-width: 50%
+
+
+    &__image
+        margin-bottom: 8px
+        object-fit: cover
+        object-position: 50%
+
+    &__item-title
+        padding-right: 70px
+        padding-left: 70px
+        font-size: 24px
+        font-weight: 700
+        line-height: 1.5
+        text-align: center
+        text-transform: uppercase
+
+    &__sub-title
+        margin-bottom: 40px
+        color: #fff
+        +mq($medium)
+            padding-right: 100px
+        .title__icon
+            color: #fff
+
+
+    &__text
+        margin-bottom: 37px
+        line-height: 1.5
+
+    &__note
+        margin-bottom: 18px
+        font-size: 24px
+        font-weight: 700
+        font-style: normal
+        letter-spacing: normal
+        line-height: 35.52px
+        text-align: left
+        text-transform: uppercase
+
+    &__button
+        background-color: #5c5d5e
+        &:hover
+            background-color: darken(#5c5d5e, 10)

@@ -1,0 +1,168 @@
+mixin decor-33(data)
+
+    .decor.decor_33#page-nav-1
+        .decor__container.container
+
+            //- +page-nav().decor__page-nav
+
+            h2.decor__title.title Декор
+
+            .decor__tabs.tabs
+                .decor__tabs-top
+                    ul.decor__nav.tabs__nav(data-tabs)
+                        li.decor__nav-item
+                            a.decor__nav-link(data-tabby-default href="#tab-1") Популярные
+                        li.decor__nav-item
+                            a.decor__nav-link(href="#tab-2") Однотонные
+
+
+                .decor__tabs-content
+
+                    #tab-1.decor__tab
+
+                        .decor__slider.slider.swiper-container.js-decor-slider
+                            .swiper-wrapper
+                                .swiper-slide
+                                    .decor__slider-item
+                                        a.decor__slider-link(href="")
+                                            img.decor__slider-image(src="assets/images/content/decor-img-1.png", alt="")
+                                            .decor__slider-entry
+                                                .decor__slider-title 2105 Светло-голубой
+
+                                .swiper-slide
+                                    .decor__slider-item
+                                        a.decor__slider-link(href="")
+                                            img.decor__slider-image(src="assets/images/content/decor-img-2.png", alt="")
+
+                                            .decor__slider-entry
+                                                .decor__slider-title 2107 Светло-зеленый
+
+                                .swiper-slide
+                                    .decor__slider-item
+                                        a.decor__slider-link(href="")
+                                            img.decor__slider-image(src="assets/images/content/decor-img-3.png", alt="")
+
+                                            .decor__slider-entry
+                                                .decor__slider-title 2107 Светло-зеленый
+
+                                .swiper-slide
+                                    .decor__slider-item
+                                        a.decor__slider-link(href="")
+                                            img.decor__slider-image(src="assets/images/content/decor-img-4.png", alt="")
+
+                                            .decor__slider-entry
+                                                .decor__slider-title 2107 Светло-зеленый
+
+                                .swiper-slide
+                                    .decor__slider-item
+                                        a.decor__slider-link(href="")
+                                            img.decor__slider-image(src="assets/images/content/decor-img-5.png", alt="")
+
+                                            .decor__slider-entry
+                                                .decor__slider-title Декор 2107 Светло-зеленый
+
+
+                                .swiper-slide
+                                    .decor__slider-item
+                                        a.decor__slider-link(href="")
+                                            img.decor__slider-image(src="assets/images/content/decor-img-3.png", alt="")
+
+                                            .decor__slider-entry
+                                                .decor__slider-title 2107 Светло-зеленый
+
+                                .swiper-slide
+                                    .decor__slider-item
+                                        a.decor__slider-link(href="")
+                                            img.decor__slider-image(src="assets/images/content/decor-img-4.png", alt="")
+
+                                            .decor__slider-entry
+                                                .decor__slider-title 2107 Светло-зеленый
+
+
+
+
+                            .slider__pagination-w
+
+                                .swiper-pagination.slider__pagination
+
+                                .slider__button.slider__button_prev
+                                    != pugHelpers.Icon.call(locals, {iconName: 'slider-arrow', className: 'slider__button-icon'})
+                                .slider__button.slider__button_next
+                                    != pugHelpers.Icon.call(locals, {iconName: 'slider-arrow', className: 'slider__button-icon'})
+
+
+                    #tab-2.decor__tab
+
+                        .decor__slider.slider.swiper-container.js-decor-slider
+                            .swiper-wrapper
+                                .swiper-slide
+                                    .decor__slider-item
+                                        a.decor__slider-link(href="")
+                                            img.slider__image(src="assets/images/content/decor-img-1.png", alt="")
+                                            .decor__slider-entry
+                                                .decor__slider-title 2105 Светло-голубой
+
+                                .swiper-slide
+                                    .decor__slider-item
+                                        a.decor__slider-link(href="")
+                                            img.slider__image(src="assets/images/content/decor-img-2.png", alt="")
+
+                                            .decor__slider-entry
+                                                .decor__slider-title 2107 Светло-зеленый
+
+                                .swiper-slide
+                                    .decor__slider-item
+                                        a.decor__slider-link(href="")
+                                            img.slider__image(src="assets/images/content/decor-img-3.png", alt="")
+
+                                            .decor__slider-entry
+                                                .decor__slider-title 2107 Светло-зеленый
+
+                                .swiper-slide
+                                    .decor__slider-item
+                                        a.decor__slider-link(href="")
+                                            img.slider__image(src="assets/images/content/decor-img-4.png", alt="")
+
+                                            .decor__slider-entry
+                                                .decor__slider-title 2107 Светло-зеленый
+
+                                .swiper-slide
+                                    .decor__slider-item
+                                        a.decor__slider-link(href="")
+                                            img.slider__image(src="assets/images/content/decor-img-5.png", alt="")
+
+                                            .decor__slider-entry
+                                                .decor__slider-title Декор 2107 Светло-зеленый
+
+
+                                .swiper-slide
+                                    .decor__slider-item
+                                        a.decor__slider-link(href="")
+                                            img.slider__image(src="assets/images/content/decor-img-3.png", alt="")
+
+                                            .decor__slider-entry
+                                                .decor__slider-title 2107 Светло-зеленый
+
+                                .swiper-slide
+                                    .decor__slider-item
+                                        a.decor__slider-link(href="")
+                                            img.slider__image(src="assets/images/content/decor-img-4.png", alt="")
+
+                                            .decor__slider-entry
+                                                .decor__slider-title 2107 Светло-зеленый
+
+
+
+
+                            .slider__pagination-w
+
+                                .swiper-pagination.slider__pagination
+
+                                .slider__button.slider__button_prev
+                                    != pugHelpers.Icon.call(locals, {iconName: 'slider-arrow', className: 'slider__button-icon'})
+                                .slider__button.slider__button_next
+                                    != pugHelpers.Icon.call(locals, {iconName: 'slider-arrow', className: 'slider__button-icon'})
+
+
+            .decor__text
+                p Эстетичный декоративный материал, обладающий высокими противопожарными характеристиками. Легок в монтаже, устойчив к перепаду температур. Благодаря экологически чистому составу успешно применяется в образовательных и медицинских учреждениях.

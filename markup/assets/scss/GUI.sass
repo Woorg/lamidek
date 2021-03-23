@@ -1,6 +1,19 @@
 .flex
   display: flex
 
+.row
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  +mq($medium)
+    margin-right: -15px
+    margin-left: -15px
+.col
+  +mq($medium)
+    padding-right: 15px
+    padding-left: 15px
+
+
 .title
   position: relative
   display: flex
@@ -10,6 +23,7 @@
   font-weight: 700
   text-align: left
   line-height: 1.4
+  word-break: normal
   text-transform: uppercase
   +mq($small)
     font-size: 38px
@@ -38,7 +52,7 @@
 
 .title_fourth
   font-size: 24px
-  flex-wrap: wrap
+  // flex-wrap: wrap
   align-items: center
   +mq($small)
     font-size: 24px
