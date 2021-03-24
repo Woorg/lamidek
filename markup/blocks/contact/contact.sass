@@ -1,1 +1,166 @@
+.contact
+    &__row
+        display: flex
+        align-items: flex-start
+        flex-wrap: wrap
+        +mq($medium)
+            flex-wrap: nowrap
+
+    &__entry
+        position: relative
+        margin-top: 20px
+        padding-top: 43px
+        padding-right: 20px
+        padding-bottom: 38px
+        padding-left: 20px
+        // max-width: 600px
+        // width: 100%
+        flex-basis: 100%
+
+
+        +mq($medium)
+            margin-top: 46px
+            margin-left: 46px
+            +padding-right(100px)
+
+            flex: 0 1 46.8%
+        +mq($large)
+            +padding-right(200px)
+
+        &:after
+            z-index: -1
+            position: absolute
+            top: 0
+            right: 0
+            left: 0
+            bottom: 0
+            content: ''
+            background-color: rgba(211, 211, 211, 0.13)
+            +mq($medium)
+                left: -40px
+
+
+
+    &__entry-title
+        margin-bottom: 9px
+        font-size: 20px
+        line-height: 1.2
+
+    &__entry-city
+        margin-bottom: 14px
+        color: #ef7e20
+        font-size: 24px
+        font-weight: 700
+        line-height: 1.2
+        text-transform: uppercase
+
+    // &__list
+
+    &__list-item
+        position: relative
+        margin-bottom: 15px
+        padding-left: 40px
+        line-height: 1.5
+        &:last-child
+            margin-bottom: 0
+
+    // &__list-item_address
+    // &__list-item_phone
+
+    &__link
+        color: inherit
+        text-decoration: none
+
+    &__icon
+        position: absolute
+        top: 50%
+        left: 0
+        transform: translateY(-50%)
+
+    &__entry-button
+        margin-top: 30px
+
+    &__col
+        position: relative
+        padding-bottom: 30px
+        padding-top: calc(484px + 30px)
+        // max-width: 570px
+        flex-basis: 100%
+        // width: 100%
+        // min-height: 484px
+        display: flex
+        flex-direction: column
+        +mq($medium)
+            flex: 0 1 48.7%
+
+        &:after
+            z-index: -1
+            position: absolute
+            top: 0
+            left: 50%
+            right: 0px
+            content: ''
+            width: 100vw
+            height: 100%
+            background-color: #ef7e20
+            transform: translateX(-50%)
+            +mq($medium)
+                display: none
+
+    &__col_map_hidden
+        padding-top: 0
+        height: 100%
+        display: none
+        justify-content: center
+        +mq($medium)
+            display: flex
+        &:after
+            display: none
+        .contact__map
+            height: 0
+            visibility: hidden
+            opacity: 1
+            +tr(.1s ease)
+
+        .contact__about
+            margin-top: 46px
+            padding-top: 43px
+
+
+
+
+    &__map
+        position: absolute
+        top: 0
+        left: 50%
+        width: 100vw
+        height: 484px
+        background-color: #f4f4f4
+        visibility: visible
+        opacity: 1
+        transform: translateX(-50%)
+        box-shadow: 0 4px 28px rgba(0, 0, 0, 0.25)
+        +tr(.1s ease)
+        +mq($medium)
+            // right: 0
+            // left: 0
+            right: -110px
+            left: -166px
+            width: 821px
+            transform: none
+        // +mq($large)
+
+
+    &__about
+        position: relative
+        padding-left: 20px
+        color: #fff
+
+
+    &__about-title,
+    &__about-text
+        color: #fff
+
+    &__about-title
+        margin-bottom: 19px
 

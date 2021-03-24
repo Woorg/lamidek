@@ -1,2 +1,117 @@
 mixin contacts(data)
-    .contacts
+    section.contacts
+        .contacts__container.container
+            h1.contacts__title.title Свяжитесь с нами
+
+            h2.contacts__sub-title.title Контакты
+
+
+            .contacts__locations
+
+                .contacts__contact.contact
+                    .contact__row
+
+                        .contact__entry
+                            .contact__entry-title Офис продаж
+                            .contact__entry-city Нижний Новгород
+                            ul.contact__list
+                                li.contact__list-item.contact__list-item_address
+                                    != pugHelpers.Icon.call(locals, {iconName: 'address-icon', className: 'contact__icon'})
+                                    | 603022, ул. Пушкина, 18, оф. 504
+                                li.contact__list-item.contact__list-item_phone
+                                    a.contact__link(href="tel:+79306804951")
+                                        != pugHelpers.Icon.call(locals, {iconName: 'phone-icon-2', className: 'contact__icon'})
+                                        | +7 930 680 49 51
+                                li.contact__list-item.contact__list-item_phone
+                                    a.contact__link(href="tel:+79306804953")
+                                        != pugHelpers.Icon.call(locals, {iconName: 'phone-icon-2', className: 'contact__icon'})
+                                        | +7 930 680 49 53
+                                li.contact__list-item.contact__list-item_phone
+                                    a.contact__link(href="tel:+79306915960")
+                                        != pugHelpers.Icon.call(locals, {iconName: 'phone-icon-2', className: 'contact__icon'})
+                                        | +7 930 691 59 60
+
+                            button.contact__entry-button.button.button_bigger Показать на карте
+
+
+                        .contact__col
+                            .contact__map#map
+
+                            .contact__about
+                                .contact__about-title.title.title_fourth Офис продаж в Нижнем Новгороде
+                                .contact__about-text.text
+                                    p Lorem ipsum dolor sit amet, mel noster imperdiet complectitur cu, fabulas graecis lobortis usu id.  Lorem ipsum dolor sit amet, mel noster imperdiet complectitur cu, fabulas graecis lobortis usu id.  Lorem ipsum dolor sit amet, mel noster imperdiet complectitur cu, fabulas graecis lobortis usu id.
+
+                .contacts__contact.contact
+                    .contact__row
+
+                        .contact__entry
+                            .contact__entry-title Производство и склад
+                            .contact__entry-city НИЖЕГОРОДСКАЯ ОБЛАСТЬ
+                            ul.contact__list
+                                li.contact__list-item.contact__list-item_address
+                                    != pugHelpers.Icon.call(locals, {iconName: 'address-icon', className: 'contact__icon'})
+                                    | 607630, поселок Кудьма, ул. Станционная, напротив д.6к1
+
+                            button.contact__entry-button.button.button_bigger Показать на карте
+
+
+                        .contact__col
+                            .contact__map#map-2
+
+                            .contact__about
+                                .contact__about-title.title.title_fourth Офис продаж в Нижнем Новгороде
+                                .contact__about-text.text
+                                    p Lorem ipsum dolor sit amet, mel noster imperdiet complectitur cu, fabulas graecis lobortis usu id.  Lorem ipsum dolor sit amet, mel noster imperdiet complectitur cu, fabulas graecis lobortis usu id.  Lorem ipsum dolor sit amet, mel noster imperdiet complectitur cu, fabulas graecis lobortis usu id.
+
+
+                .contacts__contact.contact
+                    .contact__row
+
+                        .contact__entry
+                            .contact__entry-title Офис продаж
+                            .contact__entry-city Череповец
+                            ul.contact__list
+                                li.contact__list-item.contact__list-item_address
+                                    != pugHelpers.Icon.call(locals, {iconName: 'address-icon', className: 'contact__icon'})
+                                    | 162602, Московский проспект, 49, оф. 2а
+
+                                li.contact__list-item.contact__list-item_phone
+                                    a.contact__link(href="tel:+79815046882")
+                                        != pugHelpers.Icon.call(locals, {iconName: 'phone-icon-2', className: 'contact__icon'})
+                                        | +7 981 504 68 82
+
+                            button.contact__entry-button.button.button_bigger Показать на карте
+
+
+                        .contact__col
+                            .contact__map#map-3
+
+                            .contact__about
+                                .contact__about-title.title.title_fourth Офис продаж в Нижнем Новгороде
+                                .contact__about-text.text
+                                    p Lorem ipsum dolor sit amet, mel noster imperdiet complectitur cu, fabulas graecis lobortis usu id.  Lorem ipsum dolor sit amet, mel noster imperdiet complectitur cu, fabulas graecis lobortis usu id.  Lorem ipsum dolor sit amet, mel noster imperdiet complectitur cu, fabulas graecis lobortis usu id.
+
+
+                .contacts__contact.contact
+                    .contact__row
+
+                        .contact__entry
+                            .contact__entry-title Склад
+                            .contact__entry-city Череповец
+                            ul.contact__list
+                                li.contact__list-item.contact__list-item_address
+                                    != pugHelpers.Icon.call(locals, {iconName: 'address-icon', className: 'contact__icon'})
+                                    | 162604, Кирилловское шоссе, 76 Г
+
+                            button.contact__entry-button.button.button_bigger Показать на карте
+
+
+                        .contact__col
+                            .contact__map#map-4
+
+                            .contact__about
+                                .contact__about-title.title.title_fourth Офис продаж в Нижнем Новгороде
+                                .contact__about-text.text
+                                    p Lorem ipsum dolor sit amet, mel noster imperdiet complectitur cu, fabulas graecis lobortis usu id.  Lorem ipsum dolor sit amet, mel noster imperdiet complectitur cu, fabulas graecis lobortis usu id.  Lorem ipsum dolor sit amet, mel noster imperdiet complectitur cu, fabulas graecis lobortis usu id.
+

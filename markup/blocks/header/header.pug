@@ -1,36 +1,39 @@
 mixin header(data)
     header.header&attributes(attributes)
-        .header__container.container
-            a.header__logo.logo(href='#')
-                img(src="assets/images/general/logo@2x.png", alt="logo")
-            .header__w
-                nav.header__nav.nav.nav_primary
-                    button.nav__trigger
-                        != pugHelpers.Icon.call(locals, {iconName: 'burger-icon', className: 'nav__trigger-icon'})
+        .header__top
+            .header__container.container
+                a.header__logo.logo(href='#')
+                    img(src="assets/images/general/logo@2x.png", alt="logo")
+                .header__w
+                    nav.header__nav.nav.nav_primary
+                        button.nav__trigger
+                            != pugHelpers.Icon.call(locals, {iconName: 'burger-icon', className: 'nav__trigger-icon'})
 
 
-                    .nav__list-w
+                        .nav__list-w
 
-                        button.nav__close
-                            != pugHelpers.Icon.call(locals, {iconName: 'close-icon', className: 'nav__close-icon'})
+                            button.nav__close
+                                != pugHelpers.Icon.call(locals, {iconName: 'close-icon', className: 'nav__close-icon'})
 
-                        ul.nav__list
-                            li.nav__item.nav__item_current
-                                a.nav__link(href="#") О нас
-                            li.nav__item
-                                a.nav__link(href="#") Продукция
-                            li.nav__item
-                                a.nav__link(href="#") Производство
-                            li.nav__item
-                                a.nav__link(href="#") Техническая информация
-                            li.nav__item
-                                a.nav__link(href="#") Сферы применения
-                            li.nav__item
-                                a.nav__link(href="#") Контакты
+                            ul.nav__list
+                                li.nav__item.nav__item_current
+                                    a.nav__link(href="#") О нас
+                                li.nav__item
+                                    a.nav__link(href="#") Продукция
+                                li.nav__item
+                                    a.nav__link(href="#") Производство
+                                li.nav__item
+                                    a.nav__link(href="#") Техническая информация
+                                li.nav__item
+                                    a.nav__link(href="#") Сферы применения
+                                li.nav__item
+                                    a.nav__link(href="#") Контакты
 
 
-                a.header__phone.phone(href="tel+88005117731")
-                    != pugHelpers.Icon.call(locals, {iconName: 'phone-icon', className: 'phone__icon'})
-                    | 8 800 511 77 31
+                    a.header__phone.phone(href="tel+88005117731")
+                        != pugHelpers.Icon.call(locals, {iconName: 'phone-icon', className: 'phone__icon'})
+                        | 8 800 511 77 31
 
+        .header__bottom
+            +panels-nav()
 

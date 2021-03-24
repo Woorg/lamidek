@@ -1,0 +1,28 @@
+.page
+    .page__inner
+        margin-top: -16px
+
+
+.page_inner
+    .page__inner
+        padding-top: 30px
+
+    .page__breadcrumbs
+        padding-bottom: 30px
+
+
+.page_contacts
+    .page__inner
+        position: relative
+        &:after
+            z-index: -1
+            position: absolute
+            top: 0
+            right: 0
+            width: 50%
+            height: 100%
+            display: none
+            content: ''
+            background-color: #ef7e20
+            +mq($medium)
+                display: block

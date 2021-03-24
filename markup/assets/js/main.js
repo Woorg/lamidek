@@ -13,6 +13,9 @@ import tabs from '../../blocks/tabs/tabs';
 import {certificatesGallery, certificatesSlider} from '../../blocks/certificates/certificates';
 import cooperateSlider from '../../blocks/cooperate/cooperate';
 
+import contactMapShow from '../../blocks/contact/contact';
+
+
 
 
 (function ($) {
@@ -96,6 +99,11 @@ import cooperateSlider from '../../blocks/cooperate/cooperate';
     certificatesGallery();
 
 
+    // Maps
+
+    contactMapShow()
+
+
     // List pages
 
     function pageWidget(pages) {
@@ -120,7 +128,7 @@ import cooperateSlider from '../../blocks/cooperate/cooperate';
       '34',
       '35',
       '36',
-
+      '37',
 
 
     ]);

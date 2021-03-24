@@ -1,9 +1,15 @@
 .header
   z-index: 2
   position: relative
-  background: #FFF
+  // background: #FFF
   +tr(.3s linear)
+  &__top
+    position: relative
+    z-index: 2
 
+  &__bottom
+    padding-bottom: 16px
+    overflow: hidden
 
   &__container
     padding-top: 14px
