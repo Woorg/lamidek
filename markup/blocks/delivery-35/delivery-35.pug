@@ -1,0 +1,76 @@
+mixin delivery-35(data)
+    section.delivery.delivery_second#section-4
+
+        .delivery__container.container
+
+
+            .delivery__row#section-5
+                .delivery__form
+                    .delivery__form-w
+                        .delivery__form-title.title.title_second Остались вопросы
+
+
+                        form(action="" method="")
+                            .form__field.form__field_label_text
+                                label.form__label Имя
+                                    input.form__input(type="input" name="" value="" checked)
+
+                            .form__field.form__field_label_text
+                                label.form__label Фамилия
+                                    input.form__input(type="input" name="" value="" checked)
+
+                            .form__field.form__field_label_text
+                                label.form__label Телефон
+                                    input.form__input(type="input" name="" value="" checked)
+
+                            .form__field_submit
+                                input.delivery__form-submit.form__submit.button(type="submit" value="Отправить")
+
+
+
+                .delivery__col
+                    .delivery__title Если у вас остались вопросы <br/>напишите нашему менеджеру
+
+                    .delivery__text Обратитесь к нашему менеджеру заполнив форму или воспользуйтесь фильтрами.
+
+                    .delivery__filter.filter-panels
+                        .filter-panels__title
+                            != pugHelpers.Icon.call(locals, {iconName: 'select-panels', className: 'filter-panels__icon'})
+                            | Перейти на страницу панелей
+
+                        form(action="" method="").filter-panels__form.form
+                            .filter-panels__row.form__row
+                                .filter-panels__field.form__field.form__field_checkbox
+                                    label.form__label
+                                        input.form__checkbox(type="checkbox" name="" value="" checked)
+
+                                        span.form__label-text бюджетные
+
+                                .filter-panels__field.form__field.form__field_checkbox
+                                    label.form__label
+                                        input.form__checkbox(type="checkbox" name="" value="" checked)
+                                        span.form__label-text негорючие
+
+
+                                .filter-panels__field.form__field.form__field_checkbox
+                                    label.form__label
+                                        input.form__checkbox(type="checkbox" name="" value="" checked)
+                                        span.form__label-text износостойкие
+
+                                .filter-panels__field.form__field.form__field_checkbox
+                                    label.form__label
+                                        input.form__checkbox(type="checkbox" name="" value="" checked)
+                                        span.form__label-text влагостойкие
+
+                                .filter-panels__field.form__field.form__field_checkbox
+                                    label.form__label
+                                        input.form__checkbox(type="checkbox" name="" value="" checked)
+                                        span.form__label-text трудногорючие
+
+                                .filter-panels__field.form__field.form__field_checkbox
+                                    label.form__label
+                                        input.form__checkbox(type="checkbox" name="" value="" checked)
+                                        span.form__label-text антивандальные
+
+
+                            input.filter-panels__submit.button(type="submit" value="Применить")

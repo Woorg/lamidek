@@ -1,0 +1,42 @@
+.stats
+    display: flex
+    align-items: flex-start
+    flex-wrap: wrap
+    color: #FFF
+    &__item
+        margin-bottom: 30px
+        padding-right: 40px
+        width: 100%
+        display: flex
+        // text-align: center
+        flex-direction: column
+        +mq($large)
+            max-width: 50%
+
+        &:first-child
+            .stats__title
+                text-transform: uppercase
+
+
+    &__title
+        margin-bottom: 10px
+        font-size: 48px
+        font-weight: 800
+        line-height: 1
+        // text-align: center
+
+    &__w
+        position: relative
+        padding-left: 60px
+        display: flex
+        +mq($medium)
+            padding-left: 75px
+
+    &__icon
+        position: absolute
+        top: 0
+        left: 0
+
+    &__text
+        line-height: 1.5
+

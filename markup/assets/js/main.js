@@ -8,8 +8,10 @@ import firstSlider from '../../blocks/first/first';
 import objectsSlider from '../../blocks/objects/objects';
 import decorSlider from '../../blocks/decor/decor';
 import usageSlider from '../../blocks/usage/usage';
+
 import tabs from '../../blocks/tabs/tabs';
 import {certificatesGallery, certificatesSlider} from '../../blocks/certificates/certificates';
+import cooperateSlider from '../../blocks/cooperate/cooperate';
 
 
 
@@ -67,6 +69,10 @@ import {certificatesGallery, certificatesSlider} from '../../blocks/certificates
 
     certificatesSlider();
 
+    // Cooperate slider
+
+    cooperateSlider();
+
 
     // Animate To bottom
 
@@ -111,6 +117,10 @@ import {certificatesGallery, certificatesSlider} from '../../blocks/certificates
       '31',
       '32',
       '33',
+      '34',
+      '35',
+      '36',
+
 
 
     ]);

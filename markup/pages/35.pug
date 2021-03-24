@@ -1,0 +1,41 @@
+doctype html
+html(class="no-js", lang="ru")
+
+    include ../blocks/head/head.pug
+    include ../blocks/header/header.pug
+    include ../blocks/panels-nav/panels-nav.pug
+    include ../blocks/breadcrumbs-35/breadcrumbs-35.pug
+
+    include ../blocks/first-35/first-35.pug
+    include ../blocks/cooperate/cooperate.pug
+
+    include ../blocks/advantages-35/advantages-35.pug
+    include ../blocks/mounting-35/mounting-35.pug
+    include ../blocks/delivery-35/delivery-35.pug
+
+
+    include ../blocks/footer/footer.pug
+
+    head
+        +head(head.defaults)
+    body.page
+        |%=symbols=%
+        +header()
+        main.page__inner
+            +panels-nav()
+            +first-35()
+            +cooperate()
+            +advantages-35()
+            //- +types()
+            //- +decor-33()
+            +mounting-35()
+            +delivery-35()
+
+
+        .page__bottom
+            +footer()
+
+        script(src='%=static=%js/separate-js/jquery.min.js')
+        script(src='%=static=%js/separate-js/jquery.magnific-popup.min.js')
+        //- script(src='%=static=%js/separate-js/swiper-bundle.min.js')
+        script(src='%=static=%js/main%=hash=%%=min=%.js')

@@ -1,0 +1,44 @@
+mixin first-35(data)
+    .first.first_35
+        .first__container.container
+            +breadcrumbs-35().first__breadcrrumbs
+            .first__row.row
+                .first__col.col
+                    h1.first__title.title О нашей компании
+                    .first__logo
+                        img(src="assets/images/general/logo@2x.png", alt="logo")
+
+                    .first__text
+                        p Lorem ipsum dolor sit amet, mel noster imperdiet complectitur cu, fabulas graecis lobortis usu id.  Lorem ipsum dolor sit amet, mel noster imperdiet complectitur cu, fabulas graecis lobortis usu id.  Lorem ipsum dolor sit amet, mel noster imperdiet complectitur cu, fabulas graecis lobortis usu id.  Lorem ipsum dolor sit amet, mel noster imperdiet complectitur cu, fabulas graecis lobortis usu id.  Lorem ipsum dolor sit amet, mel noster imperdiet complectitur cu, fabulas graecis lobortis usu id.  Lorem ipsum dolor sit amet, mel noster imperdiet complectitur cu, fabulas graecis lobortis usu id.
+
+                    a.first__button.button.button_bigger(href="#") Наша продукция
+
+
+                .first__col.col
+                    ul.first__stats.stats
+                        li.stats__item
+                            .stats__title 10 лет
+                            .stats__w
+                                != pugHelpers.Icon.call(locals, {iconName: 'stats-icon-1', className: 'stats__icon'})
+                                .stats__text Качественно делаем свою работу 10 лет
+
+                        li.stats__item
+                            .stats__title 300 тыс.
+                            .stats__w
+                                != pugHelpers.Icon.call(locals, {iconName: 'stats-icon-2', className: 'stats__icon'})
+                                .stats__text Более 300 тыс. довольных клиентов
+
+                        li.stats__item
+                            .stats__title 20 шт.
+                            .stats__w
+                                != pugHelpers.Icon.call(locals, {iconName: 'stats-icon-3', className: 'stats__icon'})
+                                .stats__text Более 20 наименовайний товара
+
+                        li.stats__item
+                            .stats__title 500 тыс.
+                            .stats__w
+                                != pugHelpers.Icon.call(locals, {iconName: 'stats-icon-4', className: 'stats__icon'})
+                                .stats__text Более 300 тыс. довольных клиентов
+
+
+

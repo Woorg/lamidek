@@ -1,0 +1,43 @@
+.description
+    overflow: hidden
+    box-shadow: 0 -7px 22px rgba(0, 0, 0, 0.08)
+    &__container
+        padding-top: 30px
+        padding-bottom: 30px
+        +mq($large)
+            padding-top: $p
+            padding-bottom: $p
+
+    &__title
+        margin-bottom: 30px
+
+    &__article
+        margin-bottom: 30px
+        // +mq($medium)
+
+        &:nth-child(even)
+            .description__image
+                order: -1
+
+    &__entry
+        // max-width: 670px
+        width: 100%
+        flex-shrink: 1
+        +mq($medium)
+            max-width: 57.3%
+
+    &__entry-title
+        margin-bottom: 9px
+    &__text
+        margin-bottom: 40px
+
+    // &__more
+
+    &__image
+        // max-width: 470px
+        // max-width: 530px
+        order: -1
+        width: 100%
+        +mq($medium)
+            order: 0
+            max-width: 42.7%

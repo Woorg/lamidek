@@ -1,0 +1,31 @@
+mixin certificates-34(data)
+    section.certificates.certificates_second#page-nav-2&attributes(attributes)
+        .certificates__container.container(data-title='сер тифи каты')
+            h2.certificates__title.title Сертификаты
+
+            .certificates__slider.slider.swiper-container.js-certificates-slider
+                .swiper-wrapper
+                    .swiper-slide
+                        .certificates__slider-item
+                            a.certificates__slider-link(href="assets/images/content/certificate-1.png")
+                                img.certificates__slider-image(src="assets/images/content/certificate-1.png", alt="")
+
+                    .swiper-slide
+                        .certificates__slider-item
+                            a.certificates__slider-link(href="assets/images/content/certificate-1.png")
+                                img.certificates__slider-image(src="assets/images/content/certificate-1.png", alt="")
+
+                    .swiper-slide
+                        .certificates__slider-item
+                            a.certificates__slider-link(href="assets/images/content/certificate-1.png")
+                                img.certificates__slider-image(src="assets/images/content/certificate-1.png", alt="")
+
+
+                .slider__pagination-w
+
+                    .swiper-pagination.slider__pagination
+
+                    .slider__button.slider__button_prev
+                        != pugHelpers.Icon.call(locals, {iconName: 'slider-arrow', className: 'slider__button-icon'})
+                    .slider__button.slider__button_next
+                        != pugHelpers.Icon.call(locals, {iconName: 'slider-arrow', className: 'slider__button-icon'})

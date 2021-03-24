@@ -1,0 +1,58 @@
+.cooperate
+    box-shadow: 0 -7px 22px rgba(0, 0, 0, 0.08)
+    &__container
+        padding-top: 30px
+        padding-bottom: 30px
+        +mq($medium)
+            padding-top: $p
+            padding-bottom: $p
+    &__title
+        margin-bottom: 30px
+        +mq($medium)
+            max-width: 540px
+
+    // &__slider
+
+    &__list
+        display: flex
+        // justify-content: space-between
+        align-items: flex-start
+        flex-wrap: wrap
+
+
+    &__item
+        margin-bottom: 45px
+        max-width: 100%
+        width: 100%
+        text-align: center
+        +mq($medium)
+            max-width: 50%
+        +mq($large)
+            max-width: 25%
+            text-align: left
+
+    // &__logo
+
+    .slider__pagination-w
+        position: relative
+        left: auto
+        bottom: auto
+        margin-right: auto
+        margin-left: auto
+        transform: none
+        background: transparent
+
+        .slider__button
+            color: #878787
+            &:hover
+                color: darken(#878787, 10)
+
+
+        .swiper-pagination-bullet
+            background-color: #c6c6c6
+
+            &:hover
+                background-color: darken(#c6c6c6, 10)
+
+        .swiper-pagination-bullet-active
+            background-color: #9f9f9f

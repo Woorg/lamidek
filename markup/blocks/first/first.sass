@@ -14,7 +14,8 @@
         background-color: #ef7e20
         display: none
         +mq($large)
-            right: -45px
+            // right: -45px
+            // right: 0
             left: auto
             width: 50%
             height: 100%
@@ -44,6 +45,8 @@
 
 
 
+
+    &__col,
     &__entry,
     &__scheme
         width: 100%
@@ -59,9 +62,19 @@
         +mq($large)
             margin-bottom: 0
 
+    &__col
+        +mq($medium)
+            padding-right: 15px
+            padding-left: 15px
+            max-width: 50%
 
     &__title
         margin-bottom: 7px
+
+    &__logo
+        margin-top: 15px
+        margin-bottom: 30px
+        max-width: 238px
 
     &__text
         margin-bottom: 44px
@@ -70,7 +83,7 @@
         font-weight: 400
         line-height: 1.5
         +mq($medium)
-            padding-right: 0
+            padding-right: 70px
 
     &__price
         margin-bottom: 26px
@@ -134,6 +147,13 @@
             margin-top: -320px
             margin-left: 15px
             max-width: 515px
+
+    &__stats
+        margin-left: 30px
+        +mq($medium)
+            margin-left: 70px
+
+
 
 
     &__scheme

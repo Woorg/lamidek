@@ -1,0 +1,52 @@
+doctype html
+html(class="no-js", lang="ru")
+
+    include ../blocks/head/head.pug
+    include ../blocks/header/header.pug
+    include ../blocks/panels-nav/panels-nav.pug
+    include ../blocks/breadcrumbs-34/breadcrumbs-34.pug
+
+    include ../blocks/first-34/first-34.pug
+    include ../blocks/description/description.pug
+    include ../blocks/certificates-34/certificates-34.pug
+
+    //- include ../blocks/types/types.pug
+
+    //- include ../blocks/objects/objects.pug
+    //- include ../blocks/decor-33/decor-33.pug
+
+    //- include ../blocks/advantages-33/advantages-33.pug
+    include ../blocks/mounting-32/mounting-32.pug
+    include ../blocks/delivery/delivery.pug
+
+
+    //- include ../blocks/catalog/catalog.pug
+
+
+    include ../blocks/footer/footer.pug
+
+    head
+        +head(head.defaults)
+    body.page
+        |%=symbols=%
+        +header()
+        main.page__inner
+            +panels-nav()
+            +first-34()
+            +description()
+            +certificates-34()
+            //- +objects()
+            //- +advantages-33()
+            //- +types()
+            //- +decor-33()
+            //- +mounting-32()
+            +delivery()
+
+
+        .page__bottom
+            +footer()
+
+        script(src='%=static=%js/separate-js/jquery.min.js')
+        script(src='%=static=%js/separate-js/jquery.magnific-popup.min.js')
+        //- script(src='%=static=%js/separate-js/swiper-bundle.min.js')
+        script(src='%=static=%js/main%=hash=%%=min=%.js')

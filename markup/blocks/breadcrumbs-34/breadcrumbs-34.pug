@@ -1,0 +1,9 @@
+mixin breadcrumbs-34(data)
+    .breadcrumbs&attributes(attributes)
+        ol.breadcrumbs__list
+            li.breadcrumbs__item
+                a.breadcrumbs__link(href="#") Главная
+                != pugHelpers.Icon.call(locals, {iconName: 'breadcrumbs-sep', className: 'breadcrumbs__sep'})
+            li.breadcrumbs__item
+                span.breadcrumbs__last Панели без отделки
+
