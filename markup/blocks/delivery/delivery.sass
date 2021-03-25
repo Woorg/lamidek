@@ -114,11 +114,23 @@
             order: 1
 
     .delivery__title
+        display: none
         color: #ef7e20
         font-size: 36px
         font-weight: 800
         text-transform: uppercase
         line-height: 1.5
+        +mq($medium)
+            display: block
+
+    .delivery__title_mob
+        display: block
+        font-size: 72px
+        line-height: .75
+        text-transform: none
+        +mq($medium)
+            display: none
+
 
     .delivery__text
         margin-bottom: 40px

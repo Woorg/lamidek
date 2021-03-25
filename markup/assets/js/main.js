@@ -12,6 +12,8 @@ import usageSlider from '../../blocks/usage/usage';
 import tabs from '../../blocks/tabs/tabs';
 import {certificatesGallery, certificatesSlider} from '../../blocks/certificates/certificates';
 import cooperateSlider from '../../blocks/cooperate/cooperate';
+import {productionSlider, productionImageSlider} from '../../blocks/production/production';
+
 
 import contactMapShow from '../../blocks/contact/contact';
 
@@ -75,6 +77,11 @@ import contactMapShow from '../../blocks/contact/contact';
     // Cooperate slider
 
     cooperateSlider();
+
+
+    productionSlider();
+
+    productionImageSlider();
 
 
     // Animate To bottom

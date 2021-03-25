@@ -4,9 +4,13 @@ html(class="no-js", lang="ru")
     include ../blocks/head/head.pug
     include ../blocks/header/header.pug
     include ../blocks/panels-nav/panels-nav.pug
-    include ../blocks/breadcrumbs-contacts/breadcrumbs-contacts.pug
+    include ../blocks/breadcrumbs-37/breadcrumbs-37.pug
 
     include ../blocks/first-35/first-35.pug
+
+    include ../blocks/production/production.pug
+    include ../blocks/line/line.pug
+
     include ../blocks/cooperate/cooperate.pug
 
     include ../blocks/advantages-35/advantages-35.pug
@@ -24,145 +28,19 @@ html(class="no-js", lang="ru")
         +header()
         //- +panels-nav()
         main.page__inner
-            +breadcrumbs-contacts().page__breadcrumbs
-            +contacts()
+            +breadcrumbs-37().page__breadcrumbs
+            +production()
+            +line().line_first
+            +line-second().line_second
+            +line-third().line_third
             +delivery-35()
 
         .page__bottom
             +footer()
 
 
-        script(src='https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=d491e610-d9d0-4022-9b4c-e2d184cf5425')
         script(src='%=static=%js/separate-js/jquery.min.js')
         script(src='%=static=%js/separate-js/jquery.magnific-popup.min.js')
         //- script(src='%=static=%js/separate-js/swiper-bundle.min.js')
         script(src='%=static=%js/main%=hash=%%=min=%.js')
 
-        script.
-            ymaps.ready(function () {
-                var myMap1 = new ymaps.Map('map', {
-                    center: [56.303836, 43.989987],
-                    zoom: 17,
-                    controls: []
-
-                }, {
-                    searchControlProvider: 'yandex#search'
-                });
-
-                var myMap2 = new ymaps.Map('map-2', {
-                    center: [56.164662, 43.866810],
-                    zoom: 17,
-                    controls: []
-
-                }, {
-                    searchControlProvider: 'yandex#search'
-                });
-
-                var myMap3 = new ymaps.Map('map-3', {
-                    center: [59.123591, 37.910163],
-                    zoom: 17,
-                    controls: []
-
-                }, {
-                    searchControlProvider: 'yandex#search'
-                });
-
-                var myMap4 = new ymaps.Map('map-4', {
-                    center: [59.155890, 37.935630],
-                    zoom: 17,
-                    controls: []
-
-                }, {
-                    searchControlProvider: 'yandex#search'
-                });
-
-
-
-
-
-                var myPlacemark1 = new ymaps.Placemark(myMap1.getCenter(), {
-                    hintContent: '603022, ул. Пушкина, 18, оф. 504',
-                    balloonContent: ''
-                }, {
-                    // Опции.
-                    // Необходимо указать данный тип макета.
-                    iconLayout: 'default#image',
-                    // Своё изображение иконки метки.
-                    iconImageHref: 'assets/images/general/map-marker.png',
-                    // Размеры метки.
-                    iconImageSize: [196, 100],
-                    // Смещение левого верхнего угла иконки относительно
-                    // её "ножки" (точки привязки).
-                    iconImageOffset: [-98, -118]
-                });
-
-                var myPlacemark2 = new ymaps.Placemark(myMap2.getCenter(), {
-                    hintContent: '607630, поселок Кудьма, ул. Станционная, напротив д.6к1',
-                    balloonContent: ''
-                }, {
-                    // Опции.
-                    // Необходимо указать данный тип макета.
-                    iconLayout: 'default#image',
-                    // Своё изображение иконки метки.
-                    iconImageHref: 'assets/images/general/map-marker.png',
-                    // Размеры метки.
-                    iconImageSize: [196, 100],
-                    // Смещение левого верхнего угла иконки относительно
-                    // её "ножки" (точки привязки).
-                    iconImageOffset: [-98, -118]
-                });
-
-                var myPlacemark3 = new ymaps.Placemark(myMap3.getCenter(), {
-                    hintContent: '162602, Московский проспект, 49, оф. 2а',
-                    balloonContent: ''
-                }, {
-                    // Опции.
-                    // Необходимо указать данный тип макета.
-                    iconLayout: 'default#image',
-                    // Своё изображение иконки метки.
-                    iconImageHref: 'assets/images/general/map-marker.png',
-                    // Размеры метки.
-                    iconImageSize: [196, 100],
-                    // Смещение левого верхнего угла иконки относительно
-                    // её "ножки" (точки привязки).
-                    iconImageOffset: [-98, -118]
-                });
-
-                var myPlacemark4 = new ymaps.Placemark(myMap4.getCenter(), {
-                    hintContent: '162604, Кирилловское шоссе, 76 Г',
-                    balloonContent: ''
-                }, {
-                    // Опции.
-                    // Необходимо указать данный тип макета.
-                    iconLayout: 'default#image',
-                    // Своё изображение иконки метки.
-                    iconImageHref: 'assets/images/general/map-marker.png',
-                    // Размеры метки.
-                    iconImageSize: [196, 100],
-                    // Смещение левого верхнего угла иконки относительно
-                    // её "ножки" (точки привязки).
-                    iconImageOffset: [-98, -118]
-                });
-
-                    //- myMap.controls.remove('geolocationControl');
-                    //- myMap.controls.remove('searchControl');
-                    //- myMap.controls.remove('trafficControl');
-                    //- myMap.controls.remove('typeSelector');
-                    //- myMap.controls.remove('fullscreenControl');
-                    //- myMap.controls.remove('rulerControl');
-                    myMap1.behaviors.disable(['scrollZoom']);
-                    myMap2.behaviors.disable(['scrollZoom']);
-                    myMap3.behaviors.disable(['scrollZoom']);
-                    myMap4.behaviors.disable(['scrollZoom']);
-
-
-
-                myMap1.geoObjects.add(myPlacemark1);
-                myMap2.geoObjects.add(myPlacemark2);
-                myMap3.geoObjects.add(myPlacemark3);
-                myMap4.geoObjects.add(myPlacemark4);
-
-
-
-
-            });

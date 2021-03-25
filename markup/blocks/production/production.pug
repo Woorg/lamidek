@@ -1,0 +1,52 @@
+mixin production(data)
+    .production&attributes(attributes)
+        .production__container.container
+            .production__row.row
+                .production__col.col
+                    h1.production__title.title Наше производство
+
+                    .production__slider.slider.swiper-container.js-production-slider-1
+                        .swiper-wrapper
+                            .swiper-slide
+                               .production__text.text
+                                    p 2 современные линии для ламинирования панелей пленкой пвх, лалала Lorem ipsum dolor sit amet, mel noster imperdiet complectitur cu, fabulas graecis lobortis usu id.  Lorem ipsum dolor sit amet, mel noster imperdiet complectitur cu, fabulas graecis lobortis usu id.  Lorem ipsum dolor sit amet, mel noster imperdiet complectitur cu, fabulas graecis lobortis usu id.  Lorem ipsum dolor sit amet, mel noster imperdiet complectitur cu, fabulas graecis lobortis usu id.  Lorem ipsum dolor sit amet, mel noster imperdiet complectitur cu, fabulas graecis lobortis usu id.  Lorem ipsum dolor sit amet, mel noster imperdiet complectitur cu, fabulas graecis lobortis usu id.
+
+                            .swiper-slide
+                                .production__text.text
+                                    p 2 современные линии для ламинирования панелей пленкой пвх, лалала Lorem ipsum dolor sit amet, mel noster imperdiet complectitur cu, fabulas graecis lobortis usu id.  Lorem ipsum dolor sit amet, mel noster imperdiet complectitur cu, fabulas graecis lobortis usu id.  Lorem ipsum dolor sit amet, mel noster imperdiet complectitur cu, fabulas graecis lobortis usu id.  Lorem ipsum dolor sit amet, mel noster imperdiet complectitur cu, fabulas graecis lobortis usu id.  Lorem ipsum dolor sit amet, mel noster imperdiet complectitur cu, fabulas graecis lobortis usu id.  Lorem ipsum dolor sit amet, mel noster imperdiet complectitur cu, fabulas graecis lobortis usu id.
+
+                            .swiper-slide
+                                .production__text.text
+                                    p 2 современные линии для ламинирования панелей пленкой пвх, лалала Lorem ipsum dolor sit amet, mel noster imperdiet complectitur cu, fabulas graecis lobortis usu id.  Lorem ipsum dolor sit amet, mel noster imperdiet complectitur cu, fabulas graecis lobortis usu id.  Lorem ipsum dolor sit amet, mel noster imperdiet complectitur cu, fabulas graecis lobortis usu id.  Lorem ipsum dolor sit amet, mel noster imperdiet complectitur cu, fabulas graecis lobortis usu id.  Lorem ipsum dolor sit amet, mel noster imperdiet complectitur cu, fabulas graecis lobortis usu id.  Lorem ipsum dolor sit amet, mel noster imperdiet complectitur cu, fabulas graecis lobortis usu id.
+
+                        .slider__pagination-w
+
+                            .swiper-pagination.slider__pagination
+
+                            .slider__button.slider__button_prev
+                                != pugHelpers.Icon.call(locals, {iconName: 'slider-arrow', className: 'slider__button-icon'})
+                            .slider__button.slider__button_next
+                                != pugHelpers.Icon.call(locals, {iconName: 'slider-arrow', className: 'slider__button-icon'})
+
+
+
+                .production__col.col
+                    .production__image-slider.slider.swiper-container.js-production-slider-2
+                        .swiper-wrapper
+                            .swiper-slide
+                                img.slider__image(src="assets/images/content/production-img-1.jpg", alt="")
+
+                            .swiper-slide
+                                img.slider__image(src="assets/images/content/production-img-1.jpg", alt="")
+
+                            .swiper-slide
+                                img.slider__image(src="assets/images/content/production-img-1.jpg", alt="")
+
+                        .slider__pagination-w
+
+                            .swiper-pagination.slider__pagination
+
+                            .slider__button.slider__button_prev
+                                != pugHelpers.Icon.call(locals, {iconName: 'slider-arrow', className: 'slider__button-icon'})
+                            .slider__button.slider__button_next
+                                != pugHelpers.Icon.call(locals, {iconName: 'slider-arrow', className: 'slider__button-icon'})

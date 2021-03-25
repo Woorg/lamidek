@@ -1,0 +1,102 @@
+.line
+    background-color: #ffffff
+    overflow: hidden
+    box-shadow: 0 -7px 22px rgba(0, 0, 0, 0.08)
+
+
+    &__container
+        padding-top: 30px
+        padding-bottom: 30px
+        +mq($medium)
+            padding-top: $p
+            padding-bottom: $p
+
+    &__row
+        +mq($medium)
+            padding-top: 60px
+        // padding-bottom: 60px
+
+    &__col
+        margin-bottom: 37px
+        width: 100%
+        +mq($medium)
+            margin-bottom: 0
+            max-width: 50%
+
+    &__entry
+        +mq($medium)
+            padding-right: 30px
+
+    &__title
+        margin-bottom: 15px
+        font-size: 30px
+
+    // &__text
+
+    &__image
+        position: relative
+        margin-top: 30px
+        // left: 50%
+        height: 258px
+        // transform: translateX(-50%)
+        +mq($medium)
+            margin-top: -60px
+            margin-left: -35px
+            width: 700px
+            height: 479px
+
+        img
+            position: absolute
+            right: -20px
+            left: -20px
+            max-width: 415px
+            object-fit: cover
+            object-position: 50% 0
+            +mq($medium)
+                right: 0px
+                left: 0px
+                max-width: 100%
+
+
+
+    &__features
+        margin-top: 45px
+        display: flex
+        flex-wrap: wrap
+
+    &__features-item
+        margin-bottom: 70px
+        width: 100%
+        text-align: center
+        +mq($medium)
+            margin-bottom: 0
+            max-width: 33.3%
+        &:last-child
+            +mq($medium)
+                margin-bottom: 0
+
+    &__features-icon
+        margin-bottom: 15px
+
+    &__features-title
+        color: #ef7e20
+        font-size: 24px
+        font-weight: 700
+        line-height: 1.45
+        text-align: center
+        text-transform: uppercase
+
+// .line_first
+
+
+.line_second
+    box-shadow: none
+
+
+    .line__col
+        .line__entry
+            padding-right: 0
+
+
+.line_third
+    background-image: linear-gradient(to right, #f8f8f8 0%, rgba(248, 248, 248, 0) 100%)
