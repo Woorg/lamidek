@@ -7,7 +7,7 @@ const firstSlider = () => {
 
     if ($firstBubble.length > 0) {
 
-      const breakpoint = window.matchMedia( '(min-width:1200px)' );
+      const breakpoint = window.matchMedia( '(min-width:640px)' );
 
       let firstBubbleSwiper;
 
@@ -26,9 +26,11 @@ const firstSlider = () => {
             fadeEffect: {
               crossFade: true
             },
+            width: 320,
             watchSlidesVisibility: true,
             watchSlidesProgress: true,
             watchOverflow: true,
+            resizeObserver: true,
             parallax: true,
             navigation: {
                 nextEl: '.first__bubble-nav .slider__button_next',

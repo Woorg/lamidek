@@ -43,8 +43,8 @@
         // transform: translateY(-100%)
         +tr(.5s ease)
         +mq($large)
-            padding-right: 30px
-            padding-left: 30px
+            +padding-right(30px)
+            +padding-left(30px)
             display: flex
             height: auto
             opacity: 1
@@ -76,8 +76,8 @@
             +tr(.3s ease)
 
     &__link
-        padding-right: 30px
-        padding-left: 30px
+        +padding-right(30px)
+        +padding-left(30px)
         height: 63px
         display: flex
         justify-content: center
@@ -112,6 +112,9 @@
         flex-wrap: wrap
         // transform: translateY(0%)
         +tr(.5s ease)
+        +mq($large)
+            padding-bottom: 0
+
 
     // .panels-nav__item
     //     width: 100%

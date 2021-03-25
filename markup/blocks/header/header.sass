@@ -14,12 +14,13 @@
   &__container
     padding-top: 14px
     display: flex
-    justify-content: space-between
+    // justify-content: space-between
+    justify-content: flex-start
     align-items: center
     flex-wrap: wrap
     +mq($large)
       padding-top: 15px
-      padding-bottom: 11px
+      padding-bottom: 13px
 
   &__logo
     margin-right: auto
@@ -28,6 +29,8 @@
     width: 100%
     +mq($large)
       margin-left: 0
+      margin-right: 0
+      // +margin-right(30px)
       max-width: 140px
 
 
@@ -35,14 +38,20 @@
     position: relative
     z-index: 1
     padding-top: 13px
-    padding-bottom: 13px
+    padding-bottom: 10px
     display: flex
     flex-wrap: wrap
     width: 100%
+    +mq($medium)
+      padding-bottom: 13px
     +mq($large)
+      margin-left: auto
       padding-top: 0
       padding-bottom: 0
-      width: auto
+      // width: auto
+      justify-content: space-between
+      max-width: 1000px
+      max-width: 85.5%
 
   &__nav
     margin-right: auto
@@ -50,14 +59,17 @@
 
     +mq($large)
       margin-top: 2px
-      width: auto
+      margin-right: 0
+      max-width: 820px
+      max-width: 82%
+      width: 100%
 
   // &__contacts
 
-
   &__phone
+
     +mq($large)
-      margin-left: 30px
+      margin-left: auto
 
 
   // &__nav-trigger

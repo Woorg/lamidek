@@ -14,7 +14,7 @@
         flex-wrap: wrap
 
     &__item
-        margin-bottom: 30px
+        margin-bottom: 28px
         width: 100%
         display: flex
         align-items: center
@@ -23,14 +23,23 @@
         font-weight: 400
         line-height: 1
         +mq($medium)
+            margin-bottom: 30px
             max-width: 50%
+
+        &:last-child
+            margin-bottom: 0
+            +mq($medium)
+                margin-bottom: 30px
+
 
 
     &__icon
         margin-right: 20px
 
     &__button
-        margin-top: 20px
+        margin-top: 30px
         padding-right: 14px
         padding-left: 14px
+        +mq($medium)
+            margin-top: 15px
 

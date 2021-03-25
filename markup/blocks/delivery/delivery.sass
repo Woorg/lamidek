@@ -8,7 +8,9 @@
         position: relative
 
     &__title
-        margin-bottom: 60px
+        margin-bottom: $mb
+        +mq($medium)
+            margin-bottom: 70px
 
     &__row
         margin-bottom: 40px
@@ -22,7 +24,17 @@
         &:last-child
             margin-bottom: 0
 
-    // &__row_second
+    &__row_second
+        +mq($medium)
+            margin-bottom: 20px
+        .delivery__entry
+            margin-bottom: 25px
+            // +mq($medium)
+
+        .delivery__entry-title
+            margin-bottom: 6px
+            +mq($medium)
+                margin-bottom: 22px
     //     margin-bottom: 60px
 
     &__entry,
@@ -47,15 +59,17 @@
 
     &__entry-title
         // margin-bottom: 14px
-        margin-bottom: 22px
+        margin-bottom: 44px
 
-        // +mq($medium)
+        +mq($medium)
+            margin-bottom: 22px
         //     margin-bottom: 22px
 
-
     &__form
+        margin-top: 50px
         margin-bottom: 47px
         +mq($medium)
+            margin-top: 0
             margin-bottom: 0
             padding-right: 70px
 
@@ -82,12 +96,15 @@
     // &__text
 
     .delivery__form-submit
-        margin-top: 35px
+        margin-top: 20px
+        padding-right: 40px
+        padding-left: 40px
         width: auto
         height: 55px
         display: inline-flex
         justify-content: center
         font-size: 24px
+
 
 
 

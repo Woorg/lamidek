@@ -1,11 +1,12 @@
 .mounting
+    background-color: #FFF
     background-image: linear-gradient(to bottom, #f8f8f8 0%, rgba(248, 248, 248, 0) 100%)
     overflow: hidden
     +mq($medium)
         background-image: linear-gradient(to right, #f8f8f8 0%, rgba(248, 248, 248, 0) 100%)
     &__container
-        padding-top: 30px
-        padding-bottom: 30px
+        padding-top: $p
+        padding-bottom: $p
         +mq($medium)
             padding-top: $p
             padding-bottom: $p
@@ -17,7 +18,9 @@
             padding-right: 0
 
     &__title
-        margin-bottom: $mb
+        margin-bottom: 30px
+        +mq($medium)
+            margin-bottom: $mb
 
     &__text
         margin-bottom: 28px
@@ -28,13 +31,15 @@
                 margin-bottom: 0
 
     &__list
-        margin-bottom: 50px
+        margin-bottom: 60px
         display: flex
         flex-wrap: wrap
         counter-reset: list
+        +mq($large)
+            margin-top: 48px
     &__item
         position: relative
-        margin-bottom: 40px
+        margin-bottom: 45px
         padding-left: 70px
         width: 100%
         +mq($medium)
@@ -65,7 +70,7 @@
 
 
     &__item-title
-        margin-bottom: 8px
+        margin-bottom: 15px
         font-size: 24px
         font-weight: 700
         line-height: 1
@@ -98,7 +103,7 @@
             max-width: 50%
 
     &__entry
-        padding-top: 20px
+        padding-top: 27px
 
     &__entry-title
         margin-bottom: 17px
@@ -108,6 +113,8 @@
         margin-right: -20px
         margin-left: -20px
         width: 100vw
+        min-height: 366px
+
         +mq($medium)
             margin-right: 0
             margin-left: 0
@@ -116,6 +123,11 @@
             width: auto
             // min-width: 50%
             // min-width: 100%
+
+        img
+            height: 100%
+            object-fit: cover
+            object-position: 50% 0
 
     &__image_w_caption
         margin-bottom: 20px
@@ -142,6 +154,8 @@
         text-align: left
 
     &__button
+        padding-right: 20px
+        padding-left: 20px
         height: 55px
         font-size: 24px
 

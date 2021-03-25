@@ -1,6 +1,6 @@
 .filter-panels
     &__title
-        margin-bottom: 30px
+        margin-bottom: 20px
         display: flex
         align-items: center
         color: #000000
@@ -8,6 +8,8 @@
         font-size: 18px
         font-weight: 500
         line-height: 1
+        +mq($medium)
+            margin-bottom: 30px
 
     &__icon
         margin-right: 14px
@@ -49,7 +51,9 @@
         // +mq($large)
 
     &__submit
-        margin-top: 40px
+        margin-top: 30px
+        +mq($medium)
+            margin-top: 40px
 
     // &__checkbox
 
