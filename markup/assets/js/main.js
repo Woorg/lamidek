@@ -16,8 +16,7 @@ import {productionSlider, productionImageSlider} from '../../blocks/production/p
 
 
 import contactMapShow from '../../blocks/contact/contact';
-
-
+import catalogFilter from '../../blocks/catalog/catalog';
 
 
 (function ($) {
@@ -78,11 +77,17 @@ import contactMapShow from '../../blocks/contact/contact';
 
     cooperateSlider();
 
+    // Production slider
 
     productionSlider();
 
+    // Production image slider
+
     productionImageSlider();
 
+    // Mob catalog filter
+
+    catalogFilter();
 
     // Animate To bottom
 
@@ -136,6 +141,8 @@ import contactMapShow from '../../blocks/contact/contact';
       '35',
       '36',
       '37',
+      '38',
+
 
 
     ]);

@@ -2,7 +2,6 @@
     .page__inner
         margin-top: -16px
 
-
 .page_inner
     .page__inner
         position: relative
@@ -23,6 +22,24 @@
     .page__breadcrumbs
         padding-bottom: 30px
 
+    &.page_catalog
+        .page__inner
+            position: relative
+            padding-top: 30px
+            &:after
+                display: none
+                +mq($medium)
+                    display: none
+
+        .page__hero
+            display: none
+            +mq($medium)
+                display: block
+
+    &.page_filter_active
+        overflow: hidden
+        .page__inner
+            position: static
 
 // .page_contacts
 //     .page__inner

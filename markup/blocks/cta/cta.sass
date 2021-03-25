@@ -1,5 +1,7 @@
 .cta
     overflow: hidden
+    background: #fff
+
     &__container
         position: relative
         padding-top: 30px
@@ -65,12 +67,10 @@
             padding-left: 39px
             max-width: 766px
 
-
     &__form-field
         flex: 1 1 314px
         +mq($small)
             flex: 1 0 314px
-
 
         // name
         &:nth-child(1)
@@ -134,7 +134,6 @@
         +mq($large)
             display: block
 
-
 .cta_second
     background-image: linear-gradient(to right, #f8f8f8 0%, rgba(248, 248, 248, 0) 100%)
 
@@ -146,7 +145,6 @@
         text-transform: none
         +mq($medium)
             padding-right: 50px
-
 
     .cta__form-title
         margin-bottom: 30px
@@ -173,3 +171,80 @@
             padding-right: 52px
             padding-bottom: 43px
             padding-left: 52px
+
+.cta_third
+
+    .cta__title
+        max-width: 680px
+        color: #ef7e20
+        font-size: 36px
+        font-weight: 800
+        text-align: left
+        line-height: 1.5
+        text-transform: uppercase
+        +mq($large)
+            padding-left: 50px
+
+    .cta__form-w
+        margin-right: auto
+        margin-left: auto
+        padding-top: 40px
+        padding-right: 37px
+        padding-bottom: 40px
+        padding-left: 37px
+        max-width: 980px
+        width: 100%
+        box-shadow: 0 4px 25px rgba(0, 0, 0, 0.13)
+        +mq($medium)
+            padding-top: 46px
+            padding-right: 20px
+            padding-bottom: 46px
+            padding-left: 20px
+
+    .cta__form-in
+        margin-right: -15px
+        margin-left: -15px
+
+    .cta__form
+        margin-right: 0
+        margin-left: 0
+        padding-top: 0
+        padding-right: 0
+        padding-bottom: 0
+        padding-left: 0
+        max-width: 100%
+        overflow: hidden
+        box-shadow: none
+
+    .cta__form-field
+        flex: 0 1 100%
+        +mq($large)
+            flex: 0 1 460px
+
+        &:nth-child(1)
+            order: 0
+            +mq($medium)
+                order: 0
+
+        &:nth-child(2)
+            order: 1
+            +mq($medium)
+                order: 1
+
+        &:nth-child(3)
+            order: 2
+            +mq($medium)
+                order: 2
+
+        &:nth-child(4)
+            order: 3
+            +mq($medium)
+                order: 3
+
+    .cta__submit-w
+        margin-top: 23px
+        padding-right: 15px
+        padding-left: 15px
+
+    .cta__form-submit
+        width: 100%

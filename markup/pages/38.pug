@@ -1,0 +1,45 @@
+doctype html
+html(class="no-js", lang="ru")
+
+    include ../blocks/head/head.pug
+    include ../blocks/header/header.pug
+    include ../blocks/panels-nav/panels-nav.pug
+    include ../blocks/breadcrumbs-catalog/breadcrumbs-catalog.pug
+
+    include ../blocks/catalog-second/catalog-second.pug
+    include ../blocks/hero-second/hero-second.pug
+    include ../blocks/cta-catalog/cta-catalog.pug
+
+    //- include ../blocks/production/production.pug
+    //- include ../blocks/line/line.pug
+
+    //- include ../blocks/cooperate/cooperate.pug
+
+    //- include ../blocks/advantages-35/advantages-35.pug
+    //- include ../blocks/mounting-35/mounting-35.pug
+    //- include ../blocks/contacts/contacts.pug
+
+    //- include ../blocks/delivery-35/delivery-35.pug
+
+    include ../blocks/footer/footer.pug
+
+    head
+        +head(head.defaults)
+    body.page.page_inner.page_catalog
+        |%=symbols=%
+        +header()
+        //- +panels-nav()
+        main.page__inner
+            +breadcrumbs-catalog().page__breadcrumbs
+            +catalog-second()
+            +hero-second().page__hero
+            +cta-catalog()
+
+        .page__bottom
+            +footer()
+
+
+        script(src='%=static=%js/separate-js/jquery.min.js')
+        script(src='%=static=%js/separate-js/jquery.magnific-popup.min.js')
+        //- script(src='%=static=%js/separate-js/swiper-bundle.min.js')
+        script(src='%=static=%js/main%=hash=%%=min=%.js')

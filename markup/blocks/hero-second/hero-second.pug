@@ -1,2 +1,30 @@
 mixin hero-second(data)
-    .hero-second
+    .hero.hero_second&attributes(attributes)
+        .hero__container.container
+
+            .hero__content
+                //- .hero__entry
+                .hero__text Небольшой текст
+                .hero__title Текст уникального <span>торгового предложения</span>
+                a.hero__more.button(href="#") Подробнее
+
+
+            .hero__slider.slider.swiper-container.js-hero-slider
+                .swiper-wrapper
+                    .swiper-slide
+                        img.slider__image(src="assets/images/content/slider-img-1.jpg", alt="")
+
+                    .swiper-slide
+                        img.slider__image(src="assets/images/content/slider-img-1.jpg", alt="")
+
+                    .swiper-slide
+                        img.slider__image(src="assets/images/content/slider-img-1.jpg", alt="")
+
+                .slider__pagination-w
+
+                    .swiper-pagination.slider__pagination
+
+                    .slider__button.slider__button_prev
+                        != pugHelpers.Icon.call(locals, {iconName: 'slider-arrow', className: 'slider__button-icon'})
+                    .slider__button.slider__button_next
+                        != pugHelpers.Icon.call(locals, {iconName: 'slider-arrow', className: 'slider__button-icon'})

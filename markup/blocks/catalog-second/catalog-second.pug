@@ -1,2 +1,129 @@
 mixin catalog-second(data)
-    .catalog-second
+    section.catalog.catalog_second&attributes(attributes)
+        .catalog__container.container
+            .catalog__title-w
+                h1.catalog__title.title Выбрать тип панелей
+                .catalog__title.catalog__title_mob.title Панели
+                button.catalog__filter-trigger
+                    != pugHelpers.Icon.call(locals, {iconName: 'filter-icon', className: 'catalog__filter-icon'})
+
+            .catalog__text Результаты по вашему запросу: 60 шт
+
+            ul.catalog__grid
+                li.catalog__item
+                    a.catalog__item-w(href="#")
+                        figure.catalog__image
+                            img(src="assets/images/content/wall-panels-1.png", alt="")
+                        .catalog__item-title СМЛ акустик
+                        .catalog__button.button Смотреть
+                li.catalog__item
+                    a.catalog__item-w(href="#")
+                        figure.catalog__image
+                            img(src="assets/images/content/wall-panels-1.png", alt="")
+                        .catalog__item-title СМЛ акустик
+                        .catalog__button.button Смотреть
+                li.catalog__item
+                    a.catalog__item-w(href="#")
+                        figure.catalog__image
+                            img(src="assets/images/content/wall-panels-1.png", alt="")
+                        .catalog__item-title СМЛ акустик
+                        .catalog__button.button Смотреть
+                li.catalog__item
+                    a.catalog__item-w(href="#")
+                        figure.catalog__image
+                            img(src="assets/images/content/wall-panels-1.png", alt="")
+                        .catalog__item-title СМЛ акустик
+                        .catalog__button.button Смотреть
+                li.catalog__item
+                    a.catalog__item-w(href="#")
+                        figure.catalog__image
+                            img(src="assets/images/content/wall-panels-1.png", alt="")
+                        .catalog__item-title СМЛ акустик
+                        .catalog__button.button Смотреть
+                li.catalog__item
+                    a.catalog__item-w(href="#")
+                        figure.catalog__image
+                            img(src="assets/images/content/wall-panels-1.png", alt="")
+                        .catalog__item-title СМЛ акустик
+                        .catalog__button.button Смотреть
+                li.catalog__item
+                    a.catalog__item-w(href="#")
+                        figure.catalog__image
+                            img(src="assets/images/content/wall-panels-1.png", alt="")
+                        .catalog__item-title СМЛ акустик
+                        .catalog__button.button Смотреть
+                li.catalog__item
+                    a.catalog__item-w(href="#")
+                        figure.catalog__image
+                            img(src="assets/images/content/wall-panels-1.png", alt="")
+                        .catalog__item-title СМЛ акустик
+                        .catalog__button.button Смотреть
+                li.catalog__item
+                    a.catalog__item-w(href="#")
+                        figure.catalog__image
+                            img(src="assets/images/content/wall-panels-1.png", alt="")
+                        .catalog__item-title СМЛ акустик
+                        .catalog__button.button Смотреть
+                li.catalog__item
+                    a.catalog__item-w(href="#")
+                        figure.catalog__image
+                            img(src="assets/images/content/wall-panels-1.png", alt="")
+                        .catalog__item-title СМЛ акустик
+                        .catalog__button.button Смотреть
+                li.catalog__item
+                    a.catalog__item-w(href="#")
+                        figure.catalog__image
+                            img(src="assets/images/content/wall-panels-1.png", alt="")
+                        .catalog__item-title СМЛ акустик
+                        .catalog__button.button Смотреть
+                li.catalog__item
+                    a.catalog__item-w(href="#")
+                        figure.catalog__image
+                            img(src="assets/images/content/wall-panels-1.png", alt="")
+                        .catalog__item-title СМЛ акустик
+                        .catalog__button.button Смотреть
+
+
+            .catalog__filter.filter-panels.filter-panels_full
+                h2.filter-panels__title Выбрать тип панелей:
+                .filter-panels__title.filter-panels__title_mob Фильтр
+
+                button.filter-panels__close
+                    != pugHelpers.Icon.call(locals, {iconName: 'close-icon', className: 'filter-panels__close-icon'})
+
+                form(action="").filter-panels__form.form
+                    .filter-panels__row.form__row
+                        .filter-panels__field.form__field.form__field_checkbox
+                            label.form__label
+                                input.form__checkbox(type="checkbox" name="" value="" checked)
+
+                                span.form__label-text бюджетные
+
+                        .filter-panels__field.form__field.form__field_checkbox
+                            label.form__label
+                                input.form__checkbox(type="checkbox" name="" value="" checked)
+                                span.form__label-text негорючие
+
+
+                        .filter-panels__field.form__field.form__field_checkbox
+                            label.form__label
+                                input.form__checkbox(type="checkbox" name="" value="" checked)
+                                span.form__label-text износостойкие
+
+                        .filter-panels__field.form__field.form__field_checkbox
+                            label.form__label
+                                input.form__checkbox(type="checkbox" name="" value="" checked)
+                                span.form__label-text влагостойкие
+
+                        .filter-panels__field.form__field.form__field_checkbox
+                            label.form__label
+                                input.form__checkbox(type="checkbox" name="" value="" checked)
+                                span.form__label-text трудногорючие
+
+                        .filter-panels__field.form__field.form__field_checkbox
+                            label.form__label
+                                input.form__checkbox(type="checkbox" name="" value="" checked)
+                                span.form__label-text антивандальные
+
+
+                    input.filter-panels__submit.button(type="submit" value="Применить")

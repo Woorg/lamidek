@@ -1,11 +1,48 @@
 .catalog
     overflow: hidden
+    background: #fff
     box-shadow: 0 -7px 22px rgba(0, 0, 0, 0.08)
     &__container
         padding-top: 70px
         padding-bottom: 46px
+
+    &__title-w
+        position: relative
+
     &__title
-        margin-bottom: 40px
+        margin-top: 12px
+        // padding-top: 12px
+        +mq($medium)
+            margin-top: 0
+            // padding-top: 0
+
+    &__text
+        color: #a0a0a0
+        font-size: 24px
+        font-weight: 400
+        line-height: 1.5
+        +mq($medium)
+            margin-top: 40px
+
+
+    &__filter-trigger
+        +resetbutton()
+        position: absolute
+        top: -12px
+        right: 0
+        width: 79px
+        height: 79px
+        color: #EF7E20
+        +tr(.3s ease)
+        +mq($medium)
+            display: none
+
+        &:hover
+            color: darken(#EF7E20, 10)
+            +tr(.3s ease)
+
+
+
 
     &__grid
         margin-left: -5px
@@ -14,7 +51,7 @@
         justify-content: center
         align-items: flex-start
         flex-wrap: wrap
-        +mq($small)
+        // +mq($small)
         +mq($medium)
             margin-left: -12px
             margin-right: -12px
@@ -33,7 +70,6 @@
             max-width: 50%
         +mq($large)
             max-width: 24%
-
 
     &__item-w
         position: relative
@@ -128,7 +164,6 @@
             order: 0
             // +tr(.1s ease)
 
-
     &__button
         margin-top: auto
         // padding-top: 16px
@@ -143,7 +178,6 @@
             order: 1
             will-change: opacity, visibility
             // +tr(1s ease)
-
 
     &__item-title
         margin-right: -20px
@@ -167,8 +201,6 @@
             font-size: 19px
             // +tr(.1s ease)
 
-
-
     &__item-text
         margin-bottom: 12px
         order: 2
@@ -184,4 +216,220 @@
             will-change: opacity, visibility
             // +tr(.1s ease)
 
+    &__filter
+        padding: 0
+        height: 0
+        opacity: 0
+        visibility: hidden
+        +tr(.3s ease)
+        +mq($medium)
+            margin-top: 17px
+            padding-top: 50px
+            padding-right: 40px
+            padding-bottom: 47px
+            padding-left: 40px
 
+            height: auto
+            opacity: 1
+            visibility: visible
+
+        +mq($large)
+            padding-right: 30px
+            padding-left: 30px
+
+
+    &__filter_active
+        z-index: 3
+        position: absolute
+        top: -16px
+        top: 0
+        // top: 0
+        left: 0
+        margin-top: 0
+        padding-top: 50px
+        padding-right: 40px
+        padding-bottom: 47px
+        padding-left: 40px
+
+        // bottom: 0
+        // bottom: -16px
+        // bottom: 0
+        width: 100vw
+        height: 100vh
+        opacity: 1
+        visibility: visible
+        +tr(.3s ease)
+
+
+
+
+.catalog_second
+    box-shadow: none
+
+    .catalog__container
+        padding-top: 0
+
+    .catalog__title
+        margin-bottom: 30px
+        display: none
+        +mq($medium)
+            display: block
+
+    .catalog__title_mob
+        margin-bottom: 15px
+        display: block
+        +mq($medium)
+            display: none
+
+    .catalog__text
+        padding-right: 140px
+        font-size: 18px
+        +mq($medium)
+            padding-right: 0
+            font-size: 24px
+
+    .catalog__grid
+        margin-top: 25px
+        margin-left: 0
+        margin-right: 0
+        +mq($medium)
+            margin-top: 50px
+            margin-left: -15px
+            margin-right: -15px
+
+    .catalog__item
+        margin-bottom: 30px
+        padding-left: 5px
+        padding-right: 5px
+        max-width: 100%
+        width: 100%
+        +mq($medium)
+            padding-left: 15px
+            padding-right: 15px
+            max-width: 33.3%
+        +mq($large)
+            margin-bottom: 50px
+            max-width: 25%
+
+        &:last-child
+            margin-bottom: 0
+            +mq($large)
+                margin-bottom: 50px
+
+    .catalog__item-w
+        position: static
+        border: none
+        padding-top: 0
+        padding-right: 0
+        padding-bottom: 0
+        padding-left: 0
+        height: auto
+        display: block
+        // display: flex
+        // flex-direction: column
+        // justify-content: center
+        // background-color: #ffffff
+        // text-align: center
+        // text-decoration: none
+        // color: inherit
+        // box-shadow: 0 -7px 22px rgba(0, 0, 0, 0.08)
+        overflow: hidden
+        +mq($small)
+            padding-top: 0
+            padding-right: 0
+            padding-left: 0
+            // height: 352px
+
+        &:after
+            display: none
+
+        &:hover
+            &:after
+                display: none
+                +mq($small)
+                    visibility: visible
+                    opacity: 1
+                    // display: flex
+                    +tr(.5s ease)
+
+            .catalog__image
+
+                +mq($small)
+                    position: static
+                    top: 27px
+                    right: 20px
+                    left: 20px
+                    +tr(.5s ease)
+
+            .catalog__item-title
+                +mq($small)
+                    position: static
+                    z-index: 1
+                    +tr(.5s ease)
+
+            .catalog__button
+                +mq($small)
+                    position: static
+                    z-index: 1
+                    margin-top: 0
+                    margin-bottom: 0
+                    // display: inline-flex
+                    visibility: visible
+                    opacity: 1
+                    +tr(.5s ease)
+
+            .catalog__item-text
+                +mq($small)
+                    position: static
+                    z-index: 1
+                    // display: block
+                    visibility: visible
+                    opacity: 1
+                    +tr(.5s ease)
+
+    .catalog__image
+        margin-right: 0
+        margin-left: 0
+        margin-bottom: 23px
+        order: 0
+        +mq($small)
+            order: 0
+
+    .catalog__item-title
+        margin-right: 0
+        margin-left: 0
+        order: 1
+        height: auto
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        font-size: 19px
+        font-weight: 700
+        line-height: 1.3
+        text-transform: uppercase
+        +mq($small)
+            margin-right: 0
+            margin-left: 0
+            margin-bottom: 15px
+            order: 1
+            font-size: 19px
+
+    .catalog__button
+        margin-top: 0
+        padding-right: 40px
+        padding-left: 40px
+        height: 41px
+        order: 2
+        font-size: 20px
+        +mq($small)
+            height: 41px
+            visibility: visible
+            opacity: 1
+            order: 2
+            will-change: opacity, visibility
+
+    .catalog__item-text
+        display: none
+        +mq($small)
+            display: none
