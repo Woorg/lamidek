@@ -27,10 +27,11 @@ html(class="no-js", lang="ru")
 
     head
         +head(head.defaults)
-    body.page
+    body.page.page_inner.page_sub.page_28
         |%=symbols=%
         +header()
         main.page__inner
+            +breadcrumbs-28().page__breadcrumbs
             +first-28()
             +decor()
             +features()

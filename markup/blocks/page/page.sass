@@ -22,12 +22,6 @@
     .page__breadcrumbs
         margin-bottom: 43px
 
-    // &.page_sub
-    //     .page__inner
-    //         &:after
-    //             display: none
-    //             +mq($large)
-    //                 display: block
 
     &.page_25
         .page__breadcrumbs
@@ -38,6 +32,13 @@
         .first__scheme
             +mq($large)
                 padding-bottom: 680px
+
+    &.page_28
+        .page__breadcrumbs
+            display: none
+            +mq($medium)
+                // margin-bottom: 58px
+                display: block
 
 
     &.page_catalog

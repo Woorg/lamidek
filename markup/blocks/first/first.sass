@@ -2,11 +2,13 @@
     position: relative
 
     &__container
-        padding-bottom: $p
         display: flex
         justify-content: flex-start
         align-items: flex-start
         flex-wrap: wrap
+        +mq($medium)
+            padding-bottom: $p
+
         +mq($large)
             display: block
 
@@ -81,6 +83,8 @@
         font-size: 30px
         font-weight: 700
         line-height: 1
+        +mq($medium)
+            margin-top: 10px
 
     &__button
         margin-bottom: 68px
@@ -94,7 +98,7 @@
 
     &__nav-item
         margin-bottom: 40px
-        padding-left: 40px
+        padding-left: 36px
         &:last-child
             margin-bottom: 0
 
@@ -118,7 +122,7 @@
     &__nav-icon
         position: absolute
         top: 50%
-        left: -40px
+        left: -36px
         transform: translateY(-50%)
 
     &__use-cases
@@ -133,6 +137,12 @@
             margin-top: -320px
             max-width: 515px
 
+    &__filter-panels
+        width: 100%
+        +mq($medium)
+            max-width: 400px
+
+
     &__stats
         margin-left: 30px
         +mq($medium)
@@ -140,7 +150,7 @@
 
     &__scheme
         position: relative
-        padding-bottom: 96px
+        padding-bottom: 88px
         // width: 100vw
         display: flex
         +mq($medium)
@@ -163,7 +173,7 @@
             left: 50%
             right: 0
             content: ''
-            width: 100vw
+            width: calc(100vw + 30px)
             height: 283px
             // width: 375px
             background-color: #ef7e20
@@ -180,8 +190,9 @@
     &__scheme-w
         position: relative
         // top: -50px
-        // right: -20px
-        right: 15px
+        right: -20px
+        // right: 15px
+
         // width: 100%
         // margin-left: auto
         // width: 100%
@@ -208,7 +219,8 @@
             height: auto
 
     &__scheme-img
-        width: 370px
+        // width: 370px
+        width: 100%
         display: flex
         +mq($large)
             width: 850px

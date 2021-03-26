@@ -1,17 +1,18 @@
 .features
+    background: #fff
     background-image: linear-gradient(to right, #f8f8f8 0%, rgba(248, 248, 248, 0) 100%)
     &__container
         padding-top: 30px
         padding-bottom: 30px
         +mq($large)
-            padding-top: $p
+            padding-top: 80px
             padding-bottom: $p
 
     &__title
         margin-bottom: 20px
         word-break: break-all
         +mq($large)
-            margin-bottom: 30px
+            margin-bottom: 42px
 
     &__table-w
         margin-bottom: 40px
@@ -42,8 +43,18 @@
             white-space: nowrap
             +mq($small)
                 white-space: normal
-            &:last-child
+            &:nth-child(1)
+                width: 12%
+            &:nth-child(2)
+                width: 25%
+            &:nth-child(3)
+                width: 13%
+            &:nth-child(4)
+                width: 20%
+            &:nth-child(5)
+                width: 30%
 
+            &:last-child
                 white-space: normal
 
         th
@@ -53,7 +64,8 @@
             text-transform: uppercase
             +mq($small)
                 padding-top: 0
-                padding-bottom: 0
+                padding-bottom: 18px
+
             &:last-child
                 padding-right: 0
                 padding-left: 0
