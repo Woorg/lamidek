@@ -12,7 +12,6 @@ html(class="no-js", lang="ru")
     include ../blocks/mounting-32/mounting-32.pug
     include ../blocks/delivery/delivery.pug
 
-
     //- include ../blocks/catalog/catalog.pug
 
 
@@ -20,10 +19,11 @@ html(class="no-js", lang="ru")
 
     head
         +head(head.defaults)
-    body.page
+    body.page.page_inner.page_sub.page_32
         |%=symbols=%
         +header()
         main.page__inner
+            +breadcrumbs-32().page__breadcrumbs
             +first-32()
             +objects()
             +advantages-32()
