@@ -1,20 +1,21 @@
 .use-cases
     &__title
         margin-bottom: 30px
+        padding-right: 30px
         display: flex
         align-items: center
+        +mq($medium)
+            padding-right: 0
 
     &__icon
         margin-right: 14px
-
-    // &___form
 
     &__list
         display: flex
         flex-wrap: wrap
 
     &__item
-        margin-bottom: 28px
+        margin-bottom: 38px
         width: 100%
         display: flex
         align-items: center
@@ -23,21 +24,16 @@
         font-weight: 400
         line-height: 1
         +mq($medium)
-            margin-bottom: 30px
+            margin-bottom: 38px
             max-width: 50%
-
-        &:last-child
-            margin-bottom: 0
-            +mq($medium)
-                margin-bottom: 30px
-
 
 
     &__icon
+        margin-top: -10px
         margin-right: 20px
 
     &__button
-        margin-top: 30px
+        margin-top: 0
         padding-right: 14px
         padding-left: 14px
         +mq($medium)

@@ -3,7 +3,6 @@
     overflow: hidden
     box-shadow: 0 -7px 22px rgba(0, 0, 0, 0.08)
 
-
     &__container
         padding-top: 30px
         padding-bottom: 30px
@@ -25,13 +24,21 @@
 
     &__entry
         +mq($medium)
-            padding-right: 30px
+            margin-right: -20px
+            padding-right: 0
 
     &__title
         margin-bottom: 15px
         font-size: 30px
+        +mq($medium)
+            margin-top: 15px
+            margin-bottom: 30px
+            // max-width: 550px
 
-    // &__text
+    &__text
+        padding-right: 0
+        +mq($medium)
+            padding-right: 20px
 
     &__image
         position: relative
@@ -41,7 +48,7 @@
         // transform: translateX(-50%)
         +mq($medium)
             margin-top: -60px
-            margin-left: -35px
+            margin-left: 5px
             width: 700px
             height: 479px
 
@@ -77,6 +84,8 @@
 
     &__features-icon
         margin-bottom: 15px
+        +mq($medium)
+            margin-bottom: 5px
 
     &__features-title
         color: #ef7e20
@@ -86,11 +95,22 @@
         text-align: center
         text-transform: uppercase
 
-// .line_first
+.line_first
+    .line__container
+        padding-bottom: 30px
+        +mq($medium)
+            padding-top: $p
+            padding-bottom: 10px
 
 
 .line_second
     box-shadow: none
+
+    .line__title
+        margin-bottom: 30px
+        +mq($medium)
+            margin-bottom: 70px
+
 
 
     .line__col

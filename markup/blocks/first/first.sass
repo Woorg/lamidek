@@ -1,53 +1,82 @@
 .first
+    z-index: 1
     position: relative
-
+    // overflow: hidden
     &__container
+        padding-bottom: 70px
         display: flex
         justify-content: flex-start
         align-items: flex-start
         flex-wrap: wrap
-        +mq($medium)
-            padding-bottom: $p
+        // +mq($medium)
+        //     padding-bottom: 70px
 
-        +mq($large)
-            display: block
-
-
-    &__breadcrumbs
-        margin-bottom: 34px
+        // +mq($large)
+        //     display: block
 
     &__row
-        display: flex
-        align-items: flex-start
-        flex-wrap: wrap
-        +mq($large)
-            margin-right: -15px
-            margin-left: -15px
+        position: relative
+        // display: grid
+        // grid-template-columns: 1fr
+        // gap: 0px 0px
 
+        display: grid
+        grid-template-columns: 1fr
+        // grid-template-rows: 1fr 1fr 1fr
+        gap: 0px 0px
 
-
-
-    &__col,
-    &__entry,
-    &__scheme
-        width: 100%
         +mq($medium)
-            padding-right: 15px
-            padding-left: 15px
-            max-width: 50%
+            // grid-template-columns: repeat(2, 1fr)
+            grid-template-columns: 1fr 1fr
+            // grid-template-rows: 1fr 1fr
+
+        +mq($large)
+            margin-right: -70px
 
 
     &__entry
-        margin-bottom: 70px
+        // grid-area: 1 / 1 / 2 / 2
+        // grid-area: 2 / 1 / 3 / 2
+        grid-area: 1 / 1 / 2 / 2
+        +mq($medium)
+            // grid-area: 1 / 1 / 2 / 2
+            grid-area: 1 / 1 / 2 / 2
+
+    &__scheme
+        // grid-area: 2 / 1 / 3 / 2
+        // grid-area: 3 / 1 / 4 / 2
+        grid-area: 2 / 1 / 3 / 2
+        +mq($medium)
+            // grid-area: 1 / 2 / 2 / 3
+            grid-area: 1 / 2 / 2 / 3
+
+            position: absolute
+            top: -50px
+
+    &__use-cases
+        // grid-area: 3 / 1 / 4 / 2
+        // grid-area: 4 / 1 / 5 / 2
+        grid-area: 3 / 1 / 4 / 2
+        +mq($medium)
+            // grid-area: 2 / 1 / 3 / 2
+            grid-area: 2 / 1 / 3 / 2
+
+
+    &__entry
+        // margin-bottom: 70px
         margin-bottom: 0
-        +mq($large)
-            margin-bottom: 0
+        +mq($small)
+            margin-bottom: 60px
+        +mq($medium)
+            margin-bottom: 60px
+            padding-right: 15px
+
 
     &__col
         +mq($medium)
             padding-right: 15px
             padding-left: 15px
-            max-width: 50%
+            // max-width: 50%
 
     &__title
         // margin-top: 30px
@@ -56,8 +85,8 @@
             margin-bottom: 7px
 
     &__logo
-        margin-top: 15px
-        margin-bottom: 30px
+        margin-top: 27px
+        margin-bottom: 22px
         max-width: 238px
 
     &__text
@@ -111,13 +140,13 @@
         font-weight: 400
         text-transform: uppercase
         text-decoration: none
+        word-break: break-all
         box-shadow: inset 0 -2px 0 #000000
         +tr(.3s ease)
 
         &:hover
             box-shadow: inset 0 -2px 0 transparent
             +tr(.3s ease)
-
 
     &__nav-icon
         position: absolute
@@ -126,45 +155,37 @@
         transform: translateY(-50%)
 
     &__use-cases
-        margin-top: 104px
+        margin-top: 0
         width: 100%
-        // +mq($small)
-        //     margin-top: 0
         +mq($medium)
-            margin-left: 15px
             max-width: 380px
         +mq($large)
-            margin-top: -320px
-            max-width: 515px
+            max-width: 470px
 
     &__filter-panels
-        width: 100%
-        +mq($medium)
+        +mq($xsmall)
             max-width: 400px
 
 
     &__stats
-        margin-left: 30px
+        margin-left: 37px
         +mq($medium)
+            margin-top: 57px
             margin-left: 70px
 
     &__scheme
+        z-index: 1
         position: relative
-        padding-bottom: 88px
-        // width: 100vw
+        margin-bottom: 154px
         display: flex
         +mq($medium)
-            padding-top: 50px
-            padding-bottom: 180px
+            margin-bottom: 0
+
 
         +mq($large)
-            right: 0
-            left: 0
+            // top: -46px
             margin-bottom: 0
-            padding-bottom: 730px
             width: 100%
-            // width: auto
-            display: block
 
         &:after
             z-index: -1
@@ -175,60 +196,53 @@
             content: ''
             width: calc(100vw + 100px)
             height: 283px
-            // width: 375px
             background-color: #ef7e20
             transform: translateX(-50%)
-            +mq($medium)
-                display: none
+            // +mq($medium)
+            //     height: 100%
 
-            +mq($large)
+            +mq($medium)
                 bottom: 0
                 height: 100%
-
+                display: none
 
 
     &__scheme-w
         position: relative
-        // top: -50px
-        right: -20px
-        // right: 15px
-
-        // width: 100%
-        // margin-left: auto
-        // width: 100%
-        // width: 370px
-        height: 269px
-        +mq($small)
-            // right: -47px
-
-            // right: 7px
-            right: 0
-
-            width: 377px
+        top: 0
+        right: 10px
+        left: -50px
+        width: 370px
+        height: 315px
+        +mq($xsmall)
+            left: auto
+            right: 15px
 
         +mq($medium)
             right: 8px
-        //     right: -50px
+            width: 850px
+            height: 730px
 
         +mq($large)
             position: absolute
-            top: -47px
-            right: -135px
+            top: 6px
+            right: -153px
 
-            width: auto
-            height: auto
+            width: 850px
+            height: 730px
 
     &__scheme-img
         // width: 370px
         width: 100%
+        height: 100%
         display: flex
         +mq($large)
-            width: 850px
-            height: auto
+            // width: 850px
+            // height: auto
             // width: auto
         img
             width: 100%
-        //     +mq($medium)
+            object-fit: cover
 
 
     &__scheme-markers
@@ -257,8 +271,8 @@
                 transform: scale(1)
 
     &__scheme-marker_1
-        top: 75%
-        left: 11%
+        top: 65%
+        left: 12%
         +mq($large)
             top: 68%
             left: 26%
@@ -270,18 +284,16 @@
 
 
     &__scheme-marker_2
-        top: 31%
-        left: 43%
+        top: 26%
+        left: 45%
         +mq($large)
-            // top: 100px
-            top: 21.5%
-            // left: 246px
-            left: 40.5%
+            top: 21%
+            left: 40%
 
         + .first__bubble
             +mq($large)
-                top: -2.5%
-                left: 23.5%
+                top: 1%
+                left: 21%
 
             &:after
                 +mq($large)
@@ -297,29 +309,27 @@
 
 
     &__scheme-marker_3
-        top: 39%
-        left: 13%
+        top: 34%
+        left: 15%
         +mq($large)
-            // top: 195px
             top: 34%
-            // left: 240px
             left: 40%
 
 
         + .first__bubble
             +mq($large)
-                top: 49%
-                left: 23%
+                top: 47%
+                left: 19%
             &:after
 
                 +mq($large)
                     left: auto
-                    right: 50px
+                    right: 35px
 
     &__scheme-marker_4
-        top: 34%
+        top: 29%
         left: auto
-        right: 5%
+        right: 3%
         +mq($large)
             // top: 12px
             top: 9%
@@ -329,18 +339,18 @@
 
         + .first__bubble
             +mq($large)
-                top: 24%
+                top: 20%
                 left: auto
-                right: 16%
+                right: 18%
 
             &:after
                 +mq($large)
                     left: auto
-                    right: 50px
+                    right: 20px
 
     &__scheme-marker_5
-        top: 57%
-        left: 57%
+        top: 49%
+        left: 58%
         +mq($large)
             // top: 296px
             top: 48%
@@ -350,7 +360,7 @@
         + .first__bubble
             +mq($large)
                 top: 62%
-                left: 53%
+                left: 51%
 
 
     &__scheme-button
@@ -402,20 +412,30 @@
 
 
     &__bubble_active
-        top: calc(100% + 14px)
-        right: 20px
-        // left: 20px
-        padding-top: 16px
+        top: calc(100% + 10px)
+        // right: 20px
+        right: 0
+        margin-right: 20px
+        margin-left: 20px
+        padding-top: 20px
         padding-right: 16px
         padding-bottom: 8px
         padding-left: 16px
-        // width: 100%
-        max-width: 335px
-        width: 88vw
+        // width: 88vw
+        width: 100vw
         min-height: 132px
         visibility: visible
         opacity: 1
-        // transform: translateX(-50%)
+
+        +mq($extrasmall)
+            max-width: 280px
+
+        +mq($xsmall)
+            // right: 20px
+            left: 20px
+            width: 100%
+            max-width: 335px
+
         +mq($large)
             right: auto
             // padding-top: 13px

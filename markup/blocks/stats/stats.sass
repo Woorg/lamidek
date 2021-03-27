@@ -4,25 +4,31 @@
     flex-wrap: wrap
     color: #FFF
     &__item
-        margin-bottom: 30px
+        margin-bottom: 50px
         padding-right: 40px
         width: 100%
         display: flex
         // text-align: center
         flex-direction: column
         +mq($large)
+            margin-bottom: 30px
             max-width: 50%
 
         &:first-child
             .stats__title
                 text-transform: uppercase
 
+        &:last-child
+            margin-bottom: 0
 
     &__title
         margin-bottom: 10px
-        font-size: 48px
+        font-size: 56px
         font-weight: 800
         line-height: 1
+        +mq($medium)
+            font-size: 48px
+
         // text-align: center
 
     &__w

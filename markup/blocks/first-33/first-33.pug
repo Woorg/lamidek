@@ -1,7 +1,7 @@
 mixin first-33(data)
     .first.first_33
         .first__container.container
-            +breadcrumbs-33().first__breadcrrumbs
+
             .first__row
                 .first__entry
                     h1.first__title.title Профиль
@@ -16,7 +16,7 @@ mixin first-33(data)
                         li.first__nav-item
                             a.first__nav-link(href='#')
                                 != pugHelpers.Icon.call(locals, {iconName: 'first-nav-icon', className: 'first__nav-icon'})
-                                | алюминевый профиль
+                                | алюминиевый профиль
 
 
                 .first__scheme
@@ -173,8 +173,6 @@ mixin first-33(data)
                         picture.first__scheme-img
                             source(type='image/webp' srcset='assets/images/content/scheme-img-5.webp 1x, assets/images/content/scheme-img-5@2x.webp 2x')
                             img(src='assets/images/content/scheme-img-5.png' srcset='assets/images/content/scheme-img-5.png 1x, assets/images/content/scheme-img-5@2x.png 2x' alt='schema')
-
-
 
 
                 .first__use-cases.use-cases

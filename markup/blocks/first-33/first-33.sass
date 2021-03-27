@@ -1,6 +1,126 @@
 .first_33
-    .first__scheme
-        padding-bottom: 96px
+    .first__container
         +mq($large)
-            padding-bottom: 570px
+            padding-bottom: 100px
 
+
+    .first__scheme
+        width: 100vw
+        +mq($xsmall)
+            width: auto
+        +mq($large)
+            padding-bottom: 0
+            width: auto
+
+    .first__scheme-w
+        top: 0
+        right: 0
+        left: 0
+        width: 370px
+        height: 231px
+        transform: translate(-8px, 14px)
+        // +mq($xsmall)
+        //     transform: translate(0)
+
+        +mq($medium)
+            top: 0
+            right: 0
+            width: (970px / 2)
+            height: (608px / 2)
+            // transform: translate(0, 33px)
+
+        +mq($large)
+            // height: 539px
+            width: 970px
+            height: 608px
+            transform: translate(-140px, -2px)
+
+
+    .first__scheme-marker_1
+        top: 76%
+        left: 12%
+        +mq($large)
+            top: 83%
+            left: 25%
+
+        + .first__bubble
+            +mq($large)
+                top: 100%
+                left: 19%
+
+
+    .first__scheme-marker_2
+        top: 32%
+        left: 44%
+        +mq($large)
+            top: 27%
+            left: 38%
+
+        + .first__bubble
+            +mq($large)
+                top: 3%
+                left: 21%
+
+            &:after
+                +mq($large)
+                    top: auto
+                    bottom: -32px
+                    left: auto
+                    right: 50px
+                    width: 0
+                    height: 0
+                    border-style: solid
+                    border-width: 32px 19px 0 19px
+                    border-color: #ffffff transparent transparent transparent
+
+
+    .first__scheme-marker_3
+        top: 41%
+        left: 14%
+        +mq($large)
+            top: 42%
+            left: 38%
+
+
+        + .first__bubble
+            +mq($large)
+                top: 57%
+                left: 19%
+            &:after
+
+                +mq($large)
+                    left: auto
+                    right: 30px
+
+    .first__scheme-marker_4
+        top: 35%
+        left: auto
+        right: 6%
+        +mq($large)
+            top: 11%
+            left: auto
+            right: 28%
+
+
+        + .first__bubble
+            +mq($large)
+                top: 25%
+                left: auto
+                right: 24%
+
+            &:after
+                +mq($large)
+                    left: auto
+                    right: 26px
+
+    .first__scheme-marker_5
+        top: 58%
+        left: 57%
+        +mq($large)
+            top: 51%
+            left: 54%
+
+        + .first__bubble
+            +mq($large)
+                top: 68%
+                left: 48%

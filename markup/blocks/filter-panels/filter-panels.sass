@@ -51,7 +51,10 @@
         // +mq($large)
 
     .form__label-text
-        font-size: 16px
+        font-size: 14px
+        +mq($medium)
+            font-size: 16px
+
     &__submit
         margin-top: 30px
         padding-right: 30px
@@ -104,8 +107,12 @@
     .filter-panels__field
         +margin-bottom(44px)
         +mq($medium)
+            margin-bottom: 22px
+            max-width: 25%
+        +mq($large)
             margin-bottom: 0
             max-width: 16.6%
+
         &:last-child
             +margin-bottom(44px)
             +mq($medium)

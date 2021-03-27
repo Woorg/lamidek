@@ -5,25 +5,40 @@
             margin-bottom: 68px
 
     .first__scheme
-        margin-top: 10px
-        padding-bottom: 90px
-        +mq($medium)
-            padding-bottom: 96px
+        // margin-top: 10px
+        // padding-bottom: 96px
         +mq($large)
             margin-top: 0
-            padding-bottom: 683px
+            // padding-bottom: 683px
+
+    .first__scheme
+        width: 100vw
+        +mq($xsmall)
+            width: auto
+        +mq($large)
+            padding-bottom: 0
+            width: auto
 
     .first__scheme-w
-        top: 16px
-        right: 20px
-        +mq($large)
-            top: -7px
-            right: -32px
+        top: 0
+        right: 0
+        left: 0
+        width: 365px
+        height: 246px
+        transform: translate(-20px, 27px)
+        // +mq($xsmall)
+        //     transform: translate(0)
 
-    .first__scheme-img
-        width: 377px
+        +mq($medium)
+            top: 0
+            right: 0
+            width: 813px
+            height: 570px
+            transform: translate(0, 33px)
+
         +mq($large)
-            width: 808px
+            height: 539px
+            transform: translate(-175px, 33px)
 
 
     .first__scheme-marker_1
@@ -36,7 +51,7 @@
         + .first__bubble
             +mq($large)
                 top: 105%
-                left: 31%
+                left: 28%
 
 
     .first__scheme-marker_2
@@ -48,8 +63,8 @@
 
         + .first__bubble
             +mq($large)
-                top: -5%
-                left: 32%
+                top: -4%
+                left: 29%
 
             &:after
                 +mq($large)
@@ -75,7 +90,7 @@
         + .first__bubble
             +mq($large)
                 top: 57%
-                left: 30%
+                left: 27%
             &:after
 
                 +mq($large)
@@ -94,9 +109,9 @@
 
         + .first__bubble
             +mq($large)
-                top: 20%
+                top: 21%
                 left: auto
-                right: 8%
+                right: 6%
 
             &:after
                 +mq($large)
@@ -112,6 +127,5 @@
 
         + .first__bubble
             +mq($large)
-                top: 77%
-                left: 64%
-
+                top: 78%
+                left: 61%

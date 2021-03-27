@@ -19,13 +19,13 @@
 
     .first__col
         &:first-child
-            padding-bottom: 76px
+            padding-bottom: $p
             +mq($medium)
                 padding-bottom: 0
         &:last-child
             position: relative
-            padding-top: 40px
-            padding-bottom: 40px
+            padding-top: 50px
+            padding-bottom: 0
             +mq($medium)
                 padding-top: 0
                 padding-bottom: 0
@@ -36,6 +36,8 @@
                 top: 0
                 right: -500px
                 left: -500px
+                padding-top: 60px
+                padding-bottom: 0
                 width: 2000px
                 bottom: 0
                 content: ''
@@ -53,4 +55,3 @@
                     left: auto
                     width: 50%
                     height: 100%
-                    display: none

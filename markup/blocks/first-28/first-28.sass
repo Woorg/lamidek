@@ -16,21 +16,30 @@
             margin-bottom: 26px
 
     .first__scheme
+        width: 100vw
+        +mq($xsmall)
+            width: auto
         +mq($large)
             padding-bottom: 0
+            width: auto
 
     .first__scheme-w
         top: 0
-        right: auto
-        // right: -20px
-        margin-left: -20px
-        // width: 377px
-        // +mq($medium)
-        +mq($large)
-            top: 20px
-            right: -88px
-            margin-left: auto
-            // width: wa
+        right: 0
+        left: 0
+        // width: 100%
+        transform: translateX(-20px)
+        // width: 100vw
+        // +mq($extrasmall)
+
+        +mq($xsmall)
+            transform: translateX(-15px)
+
+        +mq($medium)
+            top: 90px
+            right: -102px
+            width: 776px
+            height: 514px
 
     .first__scheme-img
         width: 100%
@@ -38,7 +47,7 @@
             margin-top: 23px
         +mq($large)
             margin-top: 0
-            width: 780px
+            // width: 780px
 
 
     .first__scheme-marker_1
@@ -50,8 +59,8 @@
 
         + .first__bubble
             +mq($large)
-                top: 99%
-                left: 21%
+                top: 101%
+                left: 18%
 
 
     .first__scheme-marker_2
@@ -63,8 +72,8 @@
 
         + .first__bubble
             +mq($large)
-                top: -14%
-                left: 22%
+                top: -15%
+                left: 19%
 
             &:after
                 +mq($large)
@@ -89,8 +98,8 @@
 
         + .first__bubble
             +mq($large)
-                top: 49%
-                left: 20%
+                top: 50%
+                left: 17%
             &:after
 
                 +mq($large)
@@ -110,7 +119,7 @@
             +mq($large)
                 top: 12%
                 left: auto
-                right: 15%
+                right: 13%
 
             &:after
                 +mq($large)
@@ -126,8 +135,8 @@
 
         + .first__bubble
             +mq($large)
-                top: 70%
-                left: 56%
+                top: 71%
+                left: 53%
 
 
     .first__button

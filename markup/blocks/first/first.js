@@ -7,7 +7,7 @@ const firstSlider = () => {
 
     if ($firstBubble.length > 0) {
 
-      const breakpoint = window.matchMedia( '(min-width:640px)' );
+      const breakpoint = window.matchMedia( '(min-width:800px)' );
 
       let firstBubbleSwiper;
 

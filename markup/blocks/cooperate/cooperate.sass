@@ -1,15 +1,19 @@
 .cooperate
+    background: #FFF
     box-shadow: 0 -7px 22px rgba(0, 0, 0, 0.08)
     &__container
-        padding-top: 30px
-        padding-bottom: 30px
+        padding-top: 120px
+        padding-bottom: $p
         +mq($medium)
-            padding-top: $p
-            padding-bottom: $p
+            padding-top: 80px
     &__title
-        margin-bottom: 30px
+        margin-bottom: 45px
+        padding-left: 10px
+        font-size: 30px
         +mq($medium)
+            padding-left: 0
             max-width: 540px
+            font-size: 36px
 
     // &__slider
 
@@ -35,6 +39,7 @@
 
     .slider__pagination-w
         position: relative
+        top: -10px
         left: auto
         bottom: auto
         margin-right: auto

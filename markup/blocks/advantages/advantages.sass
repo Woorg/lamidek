@@ -17,7 +17,7 @@
     &__title
         margin-bottom: 30px
         +mq($large)
-            margin-bottom: 68px
+            margin-bottom: 60px
             max-width: 570px
 
     &__row
@@ -35,6 +35,11 @@
             padding-right: 15px
             padding-left: 15px
             max-width: 50%
+        &:last-child
+            .advantages__profile-image
+
+                img
+                    top: calc(50% - 27px)
 
     &__profile
         margin-bottom: 40px
@@ -42,7 +47,7 @@
 
     &__profile-image
         position: relative
-        height: 180px
+        height: 173px
         display: flex
         justify-content: center
         align-items: center
@@ -59,8 +64,10 @@
 
 
 
+
+
     &__profile-title
-        margin-bottom: 20px
+        margin-bottom: 25px
         justify-content: center
 
     &__profile-more
@@ -85,6 +92,9 @@
             padding-right: 35px
             padding-left: 35px
             max-width: 50%
+
+        // &:last-child
+        //     margin-bottom: 0
 
     &__icon
         width: 86px
@@ -127,15 +137,20 @@
 .advantages_third
     background-image: linear-gradient(to right, #f8f8f8 0%, rgba(248, 248, 248, 0) 100%)
 
+    .advantages__title
+        margin-bottom: 50px
+        max-width: 590px
+
     // .advantages__list
     //     +mq($medium)
     //         margin-right: -15px
     //         margin-left: -15px
 
-    // .advantages__item
-    //     +mq($medium)
-    //         padding-right: 15px
-    //         padding-left: 15px
+    .advantages__item
+        margin-bottom: 25px
+
+    .advantages__icon
+        margin-left: 0
 
     .advantages__item-text
         margin-left: 24px
