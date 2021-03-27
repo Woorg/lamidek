@@ -115,3 +115,31 @@ mixin contacts(data)
                                 .contact__about-text.text
                                     p Lorem ipsum dolor sit amet, mel noster imperdiet complectitur cu, fabulas graecis lobortis usu id.  Lorem ipsum dolor sit amet, mel noster imperdiet complectitur cu, fabulas graecis lobortis usu id.  Lorem ipsum dolor sit amet, mel noster imperdiet complectitur cu, fabulas graecis lobortis usu id.
 
+            .contacts__locations-title Дилеры
+            .contacts__locations.contacts__locations_dealers
+
+                .contacts__contact.contact
+                    .contact__row
+
+                        .contact__entry
+                            .contact__entry-title Дилеры
+                            .contact__entry-city Москва
+                            ul.contact__list
+                                li.contact__list-item.contact__list-item_address ООО "Прогресс"
+
+
+                                li.contact__list-item.contact__list-item_phone
+                                    a.contact__link(href="tel:+74952150171")
+                                        != pugHelpers.Icon.call(locals, {iconName: 'phone-icon-2', className: 'contact__icon'})
+                                        | +7 495 215 01 71
+
+                            button.contact__entry-button.button.button_bigger Показать на карте
+
+
+                        .contact__col
+                            .contact__map#map
+
+                            .contact__about
+                                .contact__about-title.title.title_fourth Офис продаж в Нижнем Новгороде
+                                .contact__about-text.text
+                                    p Lorem ipsum dolor sit amet, mel noster imperdiet complectitur cu, fabulas graecis lobortis usu id.  Lorem ipsum dolor sit amet, mel noster imperdiet complectitur cu, fabulas graecis lobortis usu id.  Lorem ipsum dolor sit amet, mel noster imperdiet complectitur cu, fabulas graecis lobortis usu id.

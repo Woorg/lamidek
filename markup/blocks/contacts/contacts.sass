@@ -14,10 +14,30 @@
         font-weight: 700
         text-transform: uppercase
 
+    &__locations-title
+        // margin-bottom: 17px
+        padding-left: 10px
+        color: #000000
+        font-size: 30px
+        font-weight: 700
+        text-transform: uppercase
+        +mq($medium)
+            display: none
+
     &__locations
         margin-top: 10px
+        margin-bottom: 40px
         +mq($medium)
             margin-top: -30px
+
+        &:last-child
+            margin-bottom: 0
+
+    &__locations_dealers
+        .contact__entry-title
+            display: none
+            +mq($medium)
+                display: block
 
     // &__contact
     //     margin-bottom: 28px
